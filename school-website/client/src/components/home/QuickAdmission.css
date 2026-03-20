@@ -1,0 +1,91 @@
+.quick-admission {
+  position: relative;
+  overflow: hidden;
+  padding: var(--section-py) 0;
+}
+.quick-admission__bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--navy) 0%, #1a4a7c 50%, var(--navy-mid) 100%);
+  z-index: 0;
+}
+.quick-admission__bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4af37' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.quick-admission__layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.quick-admission__checklist {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.quick-admission__checklist li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.9rem;
+}
+
+.quick-admission__contact-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 10px;
+  padding: 18px;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.7;
+}
+.quick-admission__contact-box strong { color: var(--gold); display: block; }
+
+.quick-admission__form-wrapper {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 36px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.quick-admission__success {
+  text-align: center;
+  padding: 20px;
+}
+.quick-admission__success-icon { margin-bottom: 16px; }
+.quick-admission__success h3 { font-family: var(--font-display); color: var(--navy); font-size: 1.5rem; margin-bottom: 8px; }
+.quick-admission__success p { color: var(--text-muted); }
+.quick-admission__app-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: 4px;
+  background: var(--gold-pale);
+  border: 2px solid var(--gold);
+  border-radius: 8px;
+  padding: 12px 24px;
+  display: inline-block;
+  margin: 12px 0;
+  font-family: monospace;
+}
+
+@media (max-width: 900px) {
+  .quick-admission__layout { grid-template-columns: 1fr; gap: 32px; }
+  .quick-admission__contact-box { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .quick-admission__form-wrapper { padding: 24px; }
+}

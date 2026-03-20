@@ -1,0 +1,79 @@
+.testimonials__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 800px;
+  margin: 0 auto 24px;
+}
+.testimonials__stage { flex: 1; min-height: 280px; display: flex; align-items: center; }
+.testimonials__card {
+  background: var(--cream);
+  border-radius: 16px;
+  padding: 40px;
+  border: 1px solid var(--border);
+  width: 100%;
+  position: relative;
+}
+.testimonials__card::before {
+  content: '\201C';
+  position: absolute;
+  top: 16px; left: 28px;
+  font-family: var(--font-display);
+  font-size: 5rem;
+  color: var(--gold);
+  opacity: 0.25;
+  line-height: 1;
+}
+.testimonials__stars { display: flex; gap: 3px; margin-bottom: 16px; }
+.testimonials__text {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--charcoal);
+  font-style: italic;
+  margin-bottom: 24px;
+}
+.testimonials__author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-top: 1px solid var(--border);
+  padding-top: 18px;
+}
+.testimonials__author img {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  object-fit: cover;
+}
+.testimonials__name { font-weight: 700; color: var(--navy); font-size: 0.95rem; }
+.testimonials__role { font-size: 0.8rem; color: var(--text-muted); margin-top: 2px; }
+
+.testimonials__nav {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border);
+  background: var(--white);
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s;
+  box-shadow: var(--shadow-sm);
+}
+.testimonials__nav:hover { background: var(--navy); color: var(--white); border-color: var(--navy); }
+
+.testimonials__dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.testimonials__dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--border);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.testimonials__dot.active { background: var(--gold); width: 24px; border-radius: 4px; }

@@ -1,0 +1,140 @@
+.hostel__img-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 260px;
+}
+.hostel__img-item { overflow: hidden; }
+.hostel__img-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--ease); }
+.hostel__img-item:hover img { transform: scale(1.08); }
+
+.hostel__wing-toggle {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+.hostel__wing-btn {
+  display: flex; align-items: center; gap: 8px;
+  padding: 12px 32px; border-radius: 30px;
+  border: 2px solid var(--border);
+  background: var(--white); color: var(--text-muted);
+  font-weight: 600; font-size: 0.95rem; cursor: pointer;
+  transition: all 0.25s var(--ease);
+}
+.hostel__wing-btn:hover { border-color: var(--navy); color: var(--navy); }
+.hostel__wing-btn.active { background: var(--navy); color: var(--white); border-color: var(--navy); }
+
+.hostel__wing-detail {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 28px;
+  align-items: start;
+}
+.hostel__wing-main {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 32px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.hostel__wing-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.hostel__wing-stat {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px;
+  text-align: center;
+}
+.hostel__wing-stat--highlight { border-color: var(--gold); background: var(--gold-pale); }
+.hostel__wing-stat-val { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--navy); }
+.hostel__wing-stat-label { font-size: 0.8rem; color: var(--text-muted); margin-top: 3px; }
+
+.hostel__occupancy { margin-bottom: 28px; }
+.hostel__occupancy-label { display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 8px; }
+.hostel__occupancy-label span { color: var(--text-muted); }
+.hostel__occupancy-label strong { color: var(--navy); }
+.hostel__occupancy-bar { height: 10px; background: var(--border); border-radius: 5px; overflow: hidden; }
+.hostel__occupancy-fill { height: 100%; border-radius: 5px; }
+.hostel__occupancy-note { font-size: 0.82rem; color: var(--text-muted); margin-top: 8px; }
+
+.hostel__facilities h4 { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--navy); margin-bottom: 14px; }
+.hostel__facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.hostel__facility-item {
+  display: flex; align-items: center; gap: 10px;
+  background: var(--cream); border: 1px solid var(--border);
+  border-radius: 8px; padding: 10px 14px;
+  font-size: 0.85rem; color: var(--charcoal); font-weight: 500;
+  transition: all 0.2s;
+}
+.hostel__facility-item:hover { background: var(--gold-pale); border-color: var(--gold); }
+.hostel__facility-icon { color: var(--navy); flex-shrink: 0; }
+
+.hostel__wing-sidebar { display: flex; flex-direction: column; gap: 16px; }
+.hostel__warden-card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: 14px; padding: 24px; text-align: center;
+}
+.hostel__warden-avatar { width: 80px; height: 80px; border-radius: 50%; border: 3px solid var(--gold); overflow: hidden; margin: 0 auto 10px; }
+.hostel__warden-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.hostel__warden-badge {
+  display: inline-block; background: var(--gold); color: var(--navy);
+  font-size: 0.72rem; font-weight: 700; padding: 3px 14px; border-radius: 20px;
+  text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px;
+}
+.hostel__warden-card h4 { color: var(--navy); font-size: 1rem; margin-bottom: 6px; }
+.hostel__warden-card p { font-size: 0.82rem; color: var(--text-muted); }
+.hostel__apply-card { background: var(--gold-pale); border: 1.5px solid var(--gold); border-radius: 12px; padding: 20px; }
+.hostel__apply-card h4 { color: var(--navy); margin-bottom: 8px; font-size: 0.95rem; }
+.hostel__apply-card p { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 14px; }
+
+/* Meals */
+.hostel__meals { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.hostel__meal-card {
+  display: flex; gap: 18px; align-items: flex-start;
+  background: var(--cream); border: 1px solid var(--border);
+  border-radius: 14px; padding: 24px;
+  transition: all 0.3s var(--ease);
+}
+.hostel__meal-card:hover { background: var(--white); box-shadow: var(--shadow-md); transform: translateY(-4px); }
+.hostel__meal-icon {
+  width: 50px; height: 50px; flex-shrink: 0;
+  background: var(--navy); color: var(--gold);
+  border-radius: 12px; display: flex; align-items: center; justify-content: center;
+}
+.hostel__meal-name { font-weight: 700; color: var(--navy); font-size: 1rem; }
+.hostel__meal-time { color: var(--gold); font-size: 0.82rem; font-weight: 600; margin: 3px 0; }
+.hostel__meal-menu { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
+
+/* Rules */
+.hostel__rules { display: flex; flex-direction: column; gap: 14px; }
+.hostel__rule {
+  display: flex; gap: 18px; align-items: flex-start;
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px; padding: 18px 22px;
+  transition: background 0.2s;
+}
+.hostel__rule:hover { background: rgba(212,175,55,0.08); border-color: rgba(212,175,55,0.3); }
+.hostel__rule-num { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--gold); opacity: 0.6; flex-shrink: 0; line-height: 1; min-width: 32px; }
+.hostel__rule p { color: rgba(255,255,255,0.8); font-size: 0.95rem; margin: 0; line-height: 1.6; }
+
+@media (max-width: 900px) {
+  .hostel__img-strip { grid-template-columns: repeat(2, 1fr); height: 320px; }
+  .hostel__wing-detail { grid-template-columns: 1fr; }
+  .hostel__facilities-grid { grid-template-columns: repeat(2, 1fr); }
+  .hostel__meals { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .hostel__img-strip { grid-template-columns: 1fr; height: auto; }
+  .hostel__wing-stats { grid-template-columns: repeat(3, 1fr); }
+  .hostel__facilities-grid { grid-template-columns: 1fr 1fr; }
+}

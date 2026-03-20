@@ -1,0 +1,15 @@
+const mongoose = require('mongoose');
+
+const contactSchema = new mongoose.Schema({
+  name: { type: String, required: true, trim: true },
+  email: { type: String, required: true, lowercase: true },
+  phone: { type: String },
+  subject: { type: String, required: true },
+  message: { type: String, required: true },
+  type: { type: String, enum: ['General', 'Admission Enquiry', 'Transport', 'Hostel', 'Fee', 'Academic', 'Other'], default: 'General' },
+  status: { type: String, enum: ['New', 'In Progress', 'Resolved'], default: 'New' },
+  repliedAt: Date,
+  replyMessage: String,
+}, { timestamps: true });
+
+module.exports = mongoose.model('Contact', contactSchema);

@@ -1,0 +1,157 @@
+.transport__features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.transport__feature-card {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px;
+  transition: all 0.3s var(--ease);
+}
+.transport__feature-card:hover { background: var(--white); box-shadow: var(--shadow-md); transform: translateY(-5px); border-color: var(--gold); }
+.transport__feature-icon {
+  width: 50px; height: 50px;
+  background: var(--navy);
+  color: var(--gold);
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 16px;
+  transition: all 0.3s;
+}
+.transport__feature-card:hover .transport__feature-icon { background: var(--gold); color: var(--navy); }
+.transport__feature-card h4 { font-size: 1rem; color: var(--navy); margin-bottom: 8px; }
+.transport__feature-card p { font-size: 0.875rem; color: var(--text-muted); line-height: 1.7; margin: 0; }
+
+/* Routes layout */
+.transport__routes-layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.transport__route-list { display: flex; flex-direction: column; gap: 8px; }
+
+.transport__route-btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.25s var(--ease);
+  text-align: left;
+  width: 100%;
+}
+.transport__route-btn:hover { border-color: var(--navy-mid); background: var(--gold-pale); }
+.transport__route-btn.active { border-color: var(--navy); background: var(--navy); color: var(--white); }
+
+.transport__route-btn-icon {
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  background: var(--cream);
+  color: var(--navy);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.25s;
+}
+.transport__route-btn.active .transport__route-btn-icon { background: rgba(255,255,255,0.15); color: var(--gold); }
+
+.transport__route-btn-info { flex: 1; }
+.transport__route-name { display: block; font-weight: 600; font-size: 0.9rem; }
+.transport__route-meta { display: block; font-size: 0.75rem; color: var(--text-muted); margin-top: 2px; }
+.transport__route-btn.active .transport__route-meta { color: rgba(255,255,255,0.6); }
+
+.transport__route-arrow { font-size: 1.2rem; color: var(--gold); flex-shrink: 0; }
+
+.transport__route-detail {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+}
+.transport__route-header { margin-bottom: 24px; }
+.transport__route-header h3 { font-family: var(--font-display); color: var(--navy); font-size: 1.4rem; margin-bottom: 10px; }
+.transport__route-badges { display: flex; gap: 8px; flex-wrap: wrap; }
+
+/* Stops */
+.transport__stops { margin-bottom: 24px; }
+.transport__stops-list { display: flex; flex-direction: column; }
+.transport__stop { display: flex; gap: 16px; }
+.transport__stop-marker { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; }
+.transport__stop-dot {
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--white);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.transport__stop-dot--school { background: var(--gold); color: var(--navy); }
+.transport__stop-line { width: 2px; flex: 1; background: var(--border); min-height: 28px; margin: 4px 0; }
+.transport__stop-info { padding: 4px 0 20px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.transport__stop-name { font-size: 0.9rem; color: var(--charcoal); font-weight: 500; }
+.transport__stop-name.school { color: var(--navy); font-weight: 700; }
+.transport__stop-tag {
+  font-size: 0.72rem; font-weight: 600; padding: 2px 10px; border-radius: 10px;
+  background: var(--gold-pale); color: var(--navy); border: 1px solid var(--gold);
+}
+.transport__stop-tag--school { background: var(--navy); color: var(--gold); border-color: var(--navy); }
+
+.transport__route-info-box {
+  background: var(--cream);
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.transport__route-info-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-size: 0.875rem;
+}
+.transport__route-info-item svg { color: var(--gold); flex-shrink: 0; margin-top: 2px; }
+.transport__route-info-item strong { display: block; color: var(--navy); font-size: 0.85rem; }
+.transport__route-info-item span { color: var(--text-muted); font-size: 0.82rem; }
+
+/* Fee table */
+.transport__fee-table { background: var(--white); border-radius: 14px; overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow-sm); }
+.transport__fee-header, .transport__fee-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 16px;
+  padding: 16px 24px;
+  font-size: 0.875rem;
+}
+.transport__fee-header {
+  background: var(--navy);
+  color: rgba(255,255,255,0.8);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.transport__fee-row { border-bottom: 1px solid var(--border); color: var(--charcoal); }
+.transport__fee-row:last-of-type { border-bottom: none; }
+.transport__fee-row:hover { background: var(--gold-pale); }
+.transport__fee-price { font-weight: 700; color: var(--navy); }
+.transport__fee-note { padding: 12px 24px; background: var(--cream); font-size: 0.8rem; color: var(--text-muted); font-style: italic; }
+
+@media (max-width: 1000px) { .transport__routes-layout { grid-template-columns: 1fr; } }
+@media (max-width: 768px) { .transport__features { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) {
+  .transport__features { grid-template-columns: 1fr; }
+  .transport__fee-header, .transport__fee-row { grid-template-columns: 1.5fr 1fr 1fr; }
+  .transport__fee-header span:nth-child(2),
+  .transport__fee-row span:nth-child(2) { display: none; }
+}
