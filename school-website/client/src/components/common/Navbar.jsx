@@ -63,8 +63,8 @@ export default function Navbar() {
       {/* Top bar */}
       <div className="navbar__topbar">
         <div className="container navbar__topbar-inner">
-          <span><Phone size={12} /> +91 98765 43210 &nbsp;|&nbsp; admissions@vidyavihar.edu.in</span>
-          <span>Affiliated to CBSE | School Code: 12345 | Academic Year 2026-27</span>
+          <span><Phone size={12} /> +91 94948 17676&nbsp;|&nbsp; aksharaschoolkhankapur@gmail.com</span>
+          <span>Affiliated to BSET | School Code: 3604 | Academic Year 2026-27</span>
         </div>
       </div>
 
@@ -73,7 +73,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="navbar__logo">
             <div className="navbar__logo-emblem">
-              <GraduationCap size={28} />
+              <GraduationCap size={13} />
             </div>
             <div className="navbar__logo-text">
               <span className="navbar__logo-name">AKSHARA</span>

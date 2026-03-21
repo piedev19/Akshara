@@ -13,7 +13,7 @@ export default function NotFound() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <Helmet><title>Page Not Found | Vidya Vihar International School</title></Helmet>
+      <Helmet><title>Page Not Found | Akshara High School</title></Helmet>
 
       <div className="notfound__content">
         <motion.div

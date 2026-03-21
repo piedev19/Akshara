@@ -1,4 +1,4 @@
-# 🏫 Vidya Vihar International School — MERN Stack Website
+# 🏫 Akshara High School — MERN Stack Website
 
 A fully-featured, production-ready school website built with MongoDB, Express, React, and Node.js.
 
@@ -219,4 +219,4 @@ In `Footer.jsx` and `Contact.js`, replace:
 ## 📞 Support
 
 For questions about this codebase, contact the development team.
-For school admissions: **+91 98765 43210** | **admissions@vidyavihar.edu.in**
+For school admissions: **+91 98765 43210** | **aksharaschoolkhankapur@gmail.com**

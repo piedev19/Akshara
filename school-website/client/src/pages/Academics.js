@@ -10,9 +10,9 @@ const pageVariants = { initial: { opacity: 0 }, animate: { opacity: 1, transitio
 const STREAMS = [
   { label: 'Pre-Primary', grades: 'Nursery, LKG, UKG', icon: '🌱', desc: 'Activity-based, play-centric learning that builds curiosity, social skills, and a love for school through Montessori-inspired methods.' },
   { label: 'Primary', grades: 'Classes I – V', icon: '📚', desc: 'Strong foundational skills in Literacy, Numeracy, EVS, and Hindi with project-based learning and formative assessments.' },
-  { label: 'Middle School', grades: 'Classes VI – VIII', icon: '🔬', desc: 'Structured CBSE curriculum with separate labs, introduction to computers, and a wide range of co-curricular activities.' },
-  { label: 'Secondary', grades: 'Classes IX – X', icon: '🎯', desc: 'CBSE Board preparation with academic rigour, counselling, extra classes, and consistent doubt-clearing sessions.' },
-  { label: 'Senior Secondary', grades: 'Classes XI – XII', icon: '🏆', desc: 'Science (PCM/PCB), Commerce, and Humanities streams with expert faculty, career guidance, and JEE/NEET/CLAT coaching support.' },
+  { label: 'Middle School', grades: 'Classes VI – VIII', icon: '🔬', desc: 'Structured BSET curriculum with separate labs, introduction to computers, and a wide range of co-curricular activities.' },
+  { label: 'Secondary', grades: 'Classes IX – X', icon: '🎯', desc: 'BSET Board preparation with academic rigour, counselling, extra classes, and consistent doubt-clearing sessions.' },
+  { label: 'Senior Secondary', grades: 'Classes XI – X', icon: '🏆', desc: 'Science (PCM/PCB), Commerce, and Humanities streams with expert faculty, career guidance, and JEE/NEET/CLAT coaching support.' },
 ];
 
 const TOPPERS_10 = [
@@ -29,12 +29,12 @@ const TOPPERS_12 = [
 ];
 
 const RECORDS = [
-  { icon: <Trophy size={28} />, title: '100% Board Results', detail: '12 consecutive years — Class X & XII both', color: '#d4af37' },
-  { icon: <Medal size={28} />, title: 'AIR 47 – JEE Advanced', detail: 'Arjun Sharma, Class XII PCM, 2025', color: '#c0c0c0' },
-  { icon: <Star size={28} />, title: '47 State Toppers', detail: 'Across all streams in the last 5 years', color: '#cd7f32' },
-  { icon: <Trophy size={28} />, title: 'NEET Rank 312', detail: 'Kavya Menon, Class XII PCB, 2024', color: '#d4af37' },
-  { icon: <Medal size={28} />, title: '200+ Olympiad Medals', detail: 'National & International – Maths, Science, English', color: '#c0c0c0' },
-  { icon: <Star size={28} />, title: 'Best School Award', detail: '"School of Excellence" – CBSE 2019 & 2023', color: '#cd7f32' },
+  { icon: <Trophy size={13} />, title: '100% Board Results', detail: '12 consecutive years — Class X & X both', color: '#d4af37' },
+  { icon: <Medal size={13} />, title: 'AIR 47 – JEE Advanced', detail: 'Arjun Sharma, Class X PCM, 2025', color: '#c0c0c0' },
+  { icon: <Star size={13} />, title: '47 State Toppers', detail: 'Across all streams in the last 5 years', color: '#cd7f32' },
+  { icon: <Trophy size={13} />, title: 'NEET Rank 312', detail: 'Kavya Menon, Class X PCB, 2024', color: '#d4af37' },
+  { icon: <Medal size={13} />, title: '200+ Olympiad Medals', detail: 'National & High– Maths, Science, English', color: '#c0c0c0' },
+  { icon: <Star size={13} />, title: 'Best School Award', detail: '"School of Excellence" – BSET 2019 & 2023', color: '#cd7f32' },
 ];
 
 const FACILITIES = [
@@ -56,8 +56,8 @@ export default function Academics() {
   return (
     <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit">
       <Helmet>
-        <title>Academics | Vidya Vihar International School</title>
-        <meta name="description" content="Explore Vidya Vihar's curriculum from Pre-Primary to Class XII, our top academic achievers, school records, and world-class facilities." />
+        <title>Academics | Akshara High School</title>
+        <meta name="description" content="Explore Akshara's curriculum from Pre-Primary to Class X, our top academic achievers, school records, and world-class facilities." />
       </Helmet>
 
       <div className="page-hero" style={{ paddingTop: 120 }}>
@@ -107,10 +107,10 @@ export default function Academics() {
             <span className="section-eyebrow">Toppers & Achievers</span>
             <h2 style={{ color: 'var(--white)' }}>Board Exam<br /><em style={{ color: 'var(--gold)' }}>Toppers</em></h2>
             <div className="gold-divider" />
-            <p className="subtitle" style={{ color: 'rgba(255,255,255,0.65)' }}>Year after year, our students set new benchmarks in CBSE board examinations.</p>
+            <p className="subtitle" style={{ color: 'rgba(255,255,255,0.65)' }}>Year after year, our students set new benchmarks in BSET board examinations.</p>
           </div>
           <div className="academics__topper-tabs">
-            {[['10','Class X Toppers'],['12','Class XII Toppers']].map(([v, l]) => (
+            {[['10','Class X Toppers'],['12','Class X Toppers']].map(([v, l]) => (
               <button key={v} className={`academics__topper-tab ${activeTab === v ? 'active' : ''}`} onClick={() => setActiveTab(v)}>{l}</button>
             ))}
           </div>

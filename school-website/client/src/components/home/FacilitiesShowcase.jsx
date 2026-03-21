@@ -6,19 +6,11 @@ import './FacilitiesShowcase.css';
 const FACILITIES = [
   {
     id: 'labs',
-    label: 'Science Labs',
-    img: 'https://images.unsplash.com/photo-1532094349884-543559c10c2b?w=900&q=80',
+    label: 'Computer Labs',
+    img: 'https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=700&q=75',
     title: 'State-of-the-Art Science Laboratories',
     desc: 'Separate, fully equipped Physics, Chemistry, Biology, and Computer labs allow students to experience hands-on learning. Our labs feature the latest instruments and safety equipment to make science come alive.',
     highlights: ['5 fully equipped labs', 'Latest instruments & apparatus', 'Dedicated lab technicians', 'Safety-first protocols'],
-  },
-  {
-    id: 'library',
-    label: 'Digital Library',
-    img: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=900&q=80',
-    title: 'A World-Class Digital Library',
-    desc: 'Our library houses over 25,000 physical books and provides access to 10,000+ digital resources, journals, and e-books. High-speed Wi-Fi and dedicated reading areas make it the perfect place to learn and explore.',
-    highlights: ['25,000+ physical books', '10,000+ digital resources', 'Dedicated reading halls', 'Research assistance'],
   },
   {
     id: 'sports',
@@ -27,14 +19,6 @@ const FACILITIES = [
     title: 'Championship-Level Sports Facilities',
     desc: 'A sprawling sports complex with facilities for cricket, football, basketball, badminton, swimming, athletics, and more. Our students are trained by former national-level coaches to compete and win at the highest levels.',
     highlights: ['Olympic-size swimming pool', 'Indoor sports hall', 'Cricket & football grounds', 'Certified coaches'],
-  },
-  {
-    id: 'auditorium',
-    label: 'Auditorium',
-    img: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=900&q=80',
-    title: '800-Seat AC Auditorium',
-    desc: 'A purpose-built, air-conditioned auditorium seating 800 people serves as the cultural and performing arts hub. Equipped with professional lighting, acoustics, and sound systems, it hosts all annual events and competitions.',
-    highlights: ['800-seat capacity', 'Professional acoustics', 'Green rooms & backstage', 'Regular cultural events'],
   },
   {
     id: 'hostel',
@@ -65,7 +49,7 @@ export default function FacilitiesShowcase() {
           <span className="section-eyebrow">Campus Facilities</span>
           <h2>Everything Your Child Needs,<br /><em>Under One Roof</em></h2>
           <div className="gold-divider" />
-          <p className="subtitle">From world-class labs to a championship swimming pool — our campus is built to inspire.</p>
+          <p className="subtitle">From computer labs to a championship Sports — our campus is built to inspire.</p>
         </div>
 
         <motion.div

@@ -8,7 +8,7 @@
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: 14px;
-  padding: 28px 22px;
+  padding: 13px 22px;
   text-align: center;
   transition: all 0.3s var(--ease);
 }

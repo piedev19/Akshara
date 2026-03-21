@@ -22,23 +22,23 @@ const VALUES = [
 ];
 
 const FACULTY = [
-  { name: 'Mrs. Anitha Subramaniam', subject: 'Principal', exp: '30 years', img: 'https://i.pravatar.cc/200?img=42', qual: 'M.Sc., M.Ed., CTET Qualified' },
-  { name: 'Mr. Sanjay Kapoor', subject: 'Vice Principal & Mathematics', exp: '22 years', img: 'https://i.pravatar.cc/200?img=51', qual: 'M.Sc. Mathematics, B.Ed.' },
-  { name: 'Dr. Nandini Rao', subject: 'Head – Science Dept.', exp: '18 years', img: 'https://i.pravatar.cc/200?img=44', qual: 'Ph.D. Chemistry, M.Ed.' },
-  { name: 'Mr. Ashok Joshi', subject: 'Head – Humanities', exp: '20 years', img: 'https://i.pravatar.cc/200?img=52', qual: 'M.A. History, NET Qualified' },
-  { name: 'Mrs. Deepa Varghese', subject: 'Head – English', exp: '16 years', img: 'https://i.pravatar.cc/200?img=45', qual: 'M.A. English Literature, B.Ed.' },
-  { name: 'Mr. Harish Tiwari', subject: 'Head – Physical Education', exp: '14 years', img: 'https://i.pravatar.cc/200?img=53', qual: 'B.P.Ed., Diploma in Sports Science' },
-  { name: 'Mrs. Fatima Shaikh', subject: 'Head – Primary School', exp: '19 years', img: 'https://i.pravatar.cc/200?img=47', qual: 'M.Ed., Montessori Certified' },
-  { name: 'Mr. Ravi Shankar Pillai', subject: 'Head – Computer Science', exp: '12 years', img: 'https://i.pravatar.cc/200?img=54', qual: 'M.Tech. CS, CBSE Resource Person' },
+  { name: '--', subject: 'Principal', exp: '15 years', img: 'https://assets.leetcode.com/users/default_avatar.jpg', qual: 'M.Sc., M.Ed., CTET Qualified' },
+  { name: 'Mr. Sanjay Kapoor', subject: 'Vice Principal & Mathematics', exp: '22 years', img: 'https://assets.leetcode.com/users/default_avatar.jpg', qual: 'M.Sc. Mathematics, B.Ed.' },
+  { name: 'Dr. Nandini Rao', subject: 'Head – Science Dept.', exp: '18 years', img: 'https://assets.leetcode.com/users/default_avatar.jpg', qual: 'Ph.D. Chemistry, M.Ed.' },
+  { name: 'Mr. Ashok Joshi', subject: 'Head – Humanities', exp: '20 years', img: 'https://assets.leetcode.com/users/default_avatar.jpg', qual: 'M.A. History, NET Qualified' },
+  { name: 'Mrs. Deepa Varghese', subject: 'Head – English', exp: '16 years', img: 'https://assets.leetcode.com/users/default_avatar.jpg', qual: 'M.A. English Literature, B.Ed.' },
+  { name: 'Mr. Harish Tiwari', subject: 'Head – Physical Education', exp: '14 years', img: 'https://assets.leetcode.com/users/default_avatar.jpg', qual: 'B.P.Ed., Diploma in Sports Science' },
+  { name: 'Mrs. Fatima Shaikh', subject: 'Head – Primary School', exp: '19 years', img: 'https://assets.leetcode.com/users/default_avatar.jpg', qual: 'M.Ed., Montessori Certified' },
+  { name: 'Mr. Ravi Shankar Pillai', subject: 'Head – Computer Science', exp: '12 years', img: 'https://assets.leetcode.com/users/default_avatar.jpg', qual: 'M.Tech. CS, BSET Resource Person' },
 ];
 
 const MILESTONES = [
-  { year: '1998', event: 'School founded by Dr. R.C. Gupta with 120 students in Classes I–VII' },
-  { year: '2002', event: 'CBSE affiliation granted; first Class X board exams with 100% results' },
+  { year: '2013', event: 'School founded by Mr. Nagesh with 120 students in Classes I–VII' },
+  { year: '2002', event: 'BSET affiliation granted; first Class X board exams with 100% results' },
   { year: '2007', event: 'New academic wing and sports complex inaugurated; strength grows to 1,200 students' },
-  { year: '2010', event: 'Classes XI–XII added; first board year sees state topper in Commerce stream' },
+  { year: '2010', event: 'Classes XI–X added; first board year sees state topper in Commerce stream' },
   { year: '2015', event: 'Hostel facilities opened for boys and girls; digital library inaugurated' },
-  { year: '2019', event: 'School recognized as "School of Excellence" by CBSE; strength crosses 2,500' },
+  { year: '2019', event: 'School recognized as "School of Excellence" by BSET; strength crosses 2,500' },
   { year: '2022', event: 'Smart classrooms installed in all sections; robotics lab established' },
   { year: '2025', event: 'Awarded National Green Schools honour; 1,200+ students enrolled for 2025-26' },
 ];
@@ -55,7 +55,11 @@ function TimelineSection({ inView }) {
           transition={{ delay: i * 0.1, duration: 0.5 }}
         >
           <div className="about__milestone-year">{m.year}</div>
-          <div className="about__milestone-line"><div className="about__milestone-dot" /></div>
+
+          <div className="about__milestone-line">
+            <div className="about__milestone-dot" />
+          </div>
+
           <div className="about__milestone-text">{m.event}</div>
         </motion.div>
       ))}
@@ -72,8 +76,8 @@ export default function About() {
   return (
     <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit">
       <Helmet>
-        <title>About Us | Vidya Vihar International School</title>
-        <meta name="description" content="Learn about Vidya Vihar International School — our history since 1998, vision, values, experienced faculty, and the Board of Directors guiding our institution." />
+        <title>About Us | Akshara High School</title>
+        <meta name="description" content="Learn about Akshara High School — our history since 2013, vision, values, experienced faculty, and the Board of Directors guiding our institution." />
       </Helmet>
 
       {/* Page Hero */}
@@ -82,7 +86,7 @@ export default function About() {
           <p className="breadcrumb">Home › <span>About Us</span></p>
           <h1>About Our School</h1>
           <p style={{ color: 'rgba(255,255,255,0.7)', maxWidth: 550, marginTop: 12, fontSize: '1.05rem' }}>
-            A legacy of 28 years, a community of 3,200+ students, and an unwavering commitment to nurturing the leaders of tomorrow.
+            A legacy of 13 years, a community of 1,200+ students, and an unwavering commitment to nurturing the leaders of tomorrow.
           </p>
         </div>
       </div>
@@ -102,7 +106,7 @@ export default function About() {
                 alt="School campus"
               />
               <div className="about__story-badge">
-                <div className="about__story-badge-number">28+</div>
+                <div className="about__story-badge-number">13+</div>
                 <div>Years of<br />Excellence</div>
               </div>
             </motion.div>
@@ -113,7 +117,7 @@ export default function About() {
               transition={{ duration: 0.7, delay: 0.15 }}
             >
               <span className="section-eyebrow" style={{ margin: 0 }}>Our Story</span>
-              <h2 style={{ marginTop: 12 }}>Established in 1998,<br /><em>Built for the Future</em></h2>
+              <h2 style={{ marginTop: 12 }}>Established in 2013,<br /><em>Built for the Future</em></h2>
               <div className="gold-divider gold-divider--left" />
               <p>
                 AKSHARA HIGH SCHOOL KANKAPUR was established in 2013 and it is managed by the Pvt. Unaided. It is located in Rural area. 
@@ -124,16 +128,11 @@ export default function About() {
               </p>
               <p style={{ marginTop: 16 }}>
                 Starting with just 120 students and a handful of dedicated teachers, the school has grown into one of the
-                region's most respected educational institutions — now serving over 3,200 students from Nursery to Class XII,
-                with 150+ experienced faculty, and infrastructure that rivals the best in the country.
-              </p>
-              <p style={{ marginTop: 16 }}>
-                CBSE affiliated since 2002, Vidya Vihar has consistently delivered 100% board results, produced state toppers,
-                national Olympiad medallists, and alumni who have gone on to study at IITs, AIIMS, IIMs, and universities
-                across the globe.
+                region's most respected educational institutions — now serving over 1,200 students from Nursery to Class X,
+                with 30+ experienced faculty, and infrastructure that rivals the best in the country.
               </p>
               <div className="about__story-stats">
-                {[['3,200+','Students'],['150+','Faculty'],['100%','Board Results'],['28+','Years']].map(([v, l]) => (
+                {[['1,200+','Students'],['30+','Faculty'],['100%','Board Results'],['13+','Years']].map(([v, l]) => (
                   <div key={l} className="about__story-stat">
                     <div className="about__story-stat-val">{v}</div>
                     <div className="about__story-stat-label">{l}</div>
@@ -230,7 +229,7 @@ export default function About() {
             ))}
           </div>
           <p style={{ textAlign: 'center', color: 'var(--text-muted)', marginTop: 24, fontSize: '0.9rem' }}>
-            + 142 more qualified and dedicated teaching and support staff
+            + 22 more qualified and dedicated teaching and support staff
           </p>
         </div>
       </section>

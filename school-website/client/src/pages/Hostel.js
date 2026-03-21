@@ -40,7 +40,7 @@ export default function Hostel() {
   return (
     <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit">
       <Helmet>
-        <title>Hostel Facility | Vidya Vihar International School</title>
+        <title>Hostel Facility | Akshara High School</title>
         <meta name="description" content="Safe, supervised hostel for boys and girls. Nutritious meals, study rooms, 24/7 CCTV, and a resident medical officer. A true home away from home." />
       </Helmet>
 

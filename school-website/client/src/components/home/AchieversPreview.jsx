@@ -6,18 +6,18 @@ import { Trophy, Star, Award } from 'lucide-react';
 import './AchieversPreview.css';
 
 const TOPPERS = [
-  { name: 'Arjun Sharma', class: 'Class XII Science', score: '99.2%', rank: 'AIR 47 – JEE Advanced', img: 'https://i.pravatar.cc/150?img=11', category: 'Academic' },
-  { name: 'Priya Reddy', class: 'Class XII Commerce', score: '98.8%', rank: 'State Topper – CBSE', img: 'https://i.pravatar.cc/150?img=47', category: 'Academic' },
-  { name: 'Rahul Mehta', class: 'Class X', score: '99.0%', rank: 'District Rank 1 – CBSE', img: 'https://i.pravatar.cc/150?img=12', category: 'Academic' },
-  { name: 'Sneha Kulkarni', class: 'Class XII Arts', score: '97.6%', rank: 'NSD Scholarship Winner', img: 'https://i.pravatar.cc/150?img=48', category: 'Arts' },
-  { name: 'Karan Patel', class: 'Class XI', score: 'Gold Medal', rank: 'National Science Olympiad', img: 'https://i.pravatar.cc/150?img=15', category: 'Science' },
-  { name: 'Ananya Iyer', class: 'Class IX', score: '1st Place', rank: 'State Badminton – U-16', img: 'https://i.pravatar.cc/150?img=49', category: 'Sports' },
+  { name: 'Arjun Sharma', class: 'Class X', score: '99.2%', img: 'https://assets.leetcode.com/users/default_avatar.jpg', category: 'Academic' },
+  { name: 'Priya Reddy', class: 'Class X', score: '98.8%',  img: 'https://assets.leetcode.com/users/default_avatar.jpg', category: 'Academic' },
+  { name: 'Rahul Mehta', class: 'Class X', score: '99.0%',  img: 'https://assets.leetcode.com/users/default_avatar.jpg', category: 'Academic' },
+  { name: 'Sneha Kulkarni', class: 'Class X', score: '97.6%', img: 'https://assets.leetcode.com/users/default_avatar.jpg', category: 'Arts' },
+  { name: 'Karan Patel', class: 'Class VIII', score: 'Gold Medal', img: 'https://assets.leetcode.com/users/default_avatar.jpg', category: 'Science' },
+  { name: 'Ananya Iyer', class: 'Class XI', score: '1st Place', img: 'https://assets.leetcode.com/users/default_avatar.jpg', category: 'Sports' },
 ];
 
 const RECORDS = [
-  { icon: <Trophy size={22} />, label: '100% Board Results', sub: '12 consecutive years' },
-  { icon: <Star size={22} />, label: '47 State Toppers', sub: 'In the last 5 years' },
-  { icon: <Award size={22} />, label: '200+ Olympiad Medals', sub: 'National & International' },
+  { icon: <Trophy size={22} />, label: '100% Board Results', sub: '6 consecutive years' },
+  { icon: <Star size={22} />, label: '8 State Toppers', sub: 'In the last 5 years' },
+  { icon: <Award size={22} />, label: '20+ Olympiad Medals', sub: 'National & High ' },
 ];
 
 const categoryColor = { Academic: '#1a3a5c', Sports: '#2d7a3a', Arts: '#7a3a5c', Science: '#3a5c1a' };

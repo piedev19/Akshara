@@ -1,4 +1,4 @@
-/* ===== VIDYA VIHAR INTERNATIONAL SCHOOL - GLOBAL STYLES ===== */
+/* ===== Akshara High School - GLOBAL STYLES ===== */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap');
 
 :root {
@@ -26,7 +26,7 @@
 
   /* Spacing */
   --section-py: clamp(64px, 8vw, 120px);
-  --container-max: 1280px;
+  --container-max: 1130px;
   --container-px: clamp(20px, 5vw, 80px);
 
   /* Shadows */

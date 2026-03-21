@@ -9,7 +9,7 @@ const SLIDES = [
     bg: 'https://lh3.googleusercontent.com/gps-cs-s/AHVAweo6i_UZEPCfX_f1H7kdeySFC47wzR1y-YXsfn5UauTsYIbpPF-E6TiNa8l-MlRKoNkehXZf-4coiM3egwXuLBH8dnk-CbgUNB9dIsF21xL-7tQlZ4K0WuAeNHNl1nYjBGwm-m-w=s1360-w1360-h1020-rw',
     tag: 'Welcome to Akshara High School',
     title: 'Where Excellence\nMeets Opportunity',
-    subtitle: 'Nursery to Class XII | Established 2013',
+    subtitle: 'Nursery to Class X | Established 2013',
     cta: { primary: { label: 'Apply for Admission', to: '/admissions' }, secondary: { label: 'Explore Our Campus', to: '/gallery' } },
   },
   {
@@ -30,9 +30,9 @@ const SLIDES = [
 
 const STATS = [
   { icon: <Award size={24} />, value: '100%', label: 'Board Results' },
-  { icon: <Users size={24} />, value: '3,200+', label: 'Students Enrolled' },
-  { icon: <BookOpen size={24} />, value: '28+', label: 'Years of Excellence' },
-  { icon: <Star size={24} />, value: '150+', label: 'Experienced Faculty' },
+  { icon: <Users size={24} />, value: '1,200+', label: 'Students Enrolled' },
+  { icon: <BookOpen size={24} />, value: '13+', label: 'Years of Excellence' },
+  { icon: <Star size={24} />, value: '30+', label: 'Experienced Faculty' },
 ];
 
 export default function Hero() {
