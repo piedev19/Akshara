@@ -2,7 +2,7 @@ const News = require('../models/News');
 
 module.exports = async (req, res) => {
   try {
-    const baseUrl = process.env.CLIENT_URL || 'https://vidyavihar.edu.in';
+    const baseUrl = process.env.CLIENT_URL || 'https://akshara.edu.in';
     const news = await News.find({ isPublished: true }).select('slug updatedAt').lean();
 
     const staticPages = [

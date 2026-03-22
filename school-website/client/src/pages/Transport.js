@@ -39,7 +39,7 @@ export default function Transport() {
   return (
     <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit">
       <Helmet>
-        <title>Transport Facility | Vidya Vihar International School</title>
+        <title>Transport Facility | Akshara Hgh School</title>
         <meta name="description" content="Safe, GPS-tracked school transport covering 5 city zones. Lady escort, CCTV, and real-time tracking ensure your child's safety every day." />
       </Helmet>
 

@@ -26,7 +26,7 @@ export default function WhyUs() {
           <h2>An Education That Goes<br /><em>Beyond the Textbook</em></h2>
           <div className="gold-divider" />
           <p className="subtitle">
-            For over 28 years, Vidya Vihar has been shaping confident, compassionate, and capable individuals 
+            For over 28 years, Akshara has been shaping confident, compassionate, and capable individuals 
             through an education that nurtures the whole child.
           </p>
         </div>

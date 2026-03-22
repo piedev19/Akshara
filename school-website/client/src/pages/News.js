@@ -12,7 +12,7 @@ const NEWS_DATA = [
   { id: 1, category: 'Achievement', title: 'Arjun Sharma Secures AIR 47 in JEE Advanced 2025', excerpt: 'We are immensely proud of Arjun Sharma (Class XII, 2025 batch) who secured All India Rank 47 in JEE Advanced 2025. His dedication, the guidance of our faculty, and unwavering support from his family made this possible.', date: '2025-06-15', img: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=70', featured: true },
   { id: 2, category: 'Event', title: 'Annual Day Celebration – 28th March 2026', excerpt: 'Join us for our grand Annual Day celebration on 28th March 2026 at the school auditorium. This year\'s theme is "Roots and Wings" — celebrating our heritage while soaring towards tomorrow.', date: '2026-03-01', img: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600&q=70', featured: true },
   { id: 3, category: 'News', title: 'Admissions Open for 2026-27 Academic Year', excerpt: 'Applications for the 2026-27 academic year are now open for all classes from Nursery to Class XII. Limited seats available. Apply online or visit the school office. Early applications are encouraged.', date: '2026-01-15', img: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=70', featured: false },
-  { id: 4, category: 'Achievement', title: 'School Wins National Green Schools Award for 3rd Year', excerpt: 'Vidya Vihar International School has been awarded the prestigious National Green Schools Award for the third consecutive year, recognising our solar installations, water conservation, and organic farming initiatives.', date: '2025-12-10', img: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&q=70', featured: false },
+  { id: 4, category: 'Achievement', title: 'School Wins National Green Schools Award for 3rd Year', excerpt: 'Akshara Hgh School has been awarded the prestigious National Green Schools Award for the third consecutive year, recognising our solar installations, water conservation, and organic farming initiatives.', date: '2025-12-10', img: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&q=70', featured: false },
   { id: 5, category: 'Event', title: 'Science Exhibition 2026 – Registrations Open', excerpt: 'The annual inter-school Science and Innovation Exhibition will be held on 15th April 2026. Students from Classes VI to XII are encouraged to participate and showcase their projects.', date: '2026-02-20', img: 'https://images.unsplash.com/photo-1532094349884-543559c10c2b?w=600&q=70', featured: false },
   { id: 6, category: 'Circular', title: 'Revised Fee Structure for 2026-27', excerpt: 'Parents are requested to note the revised fee structure for the upcoming academic year. Fee details have been updated on the school portal. Last date for fee submission: 31st May 2026.', date: '2026-02-01', img: null, featured: false },
   { id: 7, category: 'Achievement', title: 'U-14 Cricket Team Wins District Championship', excerpt: 'Congratulations to our Under-14 cricket team who emerged victorious in the District Level Cricket Championship 2025. The team went unbeaten through all 6 matches. Coach Mr. Santosh Kumar expressed his pride.', date: '2025-11-22', img: 'https://images.unsplash.com/photo-1540747913346-19212a4cf528?w=600&q=70', featured: false },
@@ -37,8 +37,8 @@ export default function News() {
   return (
     <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit">
       <Helmet>
-        <title>News & Events | Vidya Vihar International School</title>
-        <meta name="description" content="Latest news, events, achievements, and circulars from Vidya Vihar International School." />
+        <title>News & Events | Akshara Hgh School</title>
+        <meta name="description" content="Latest news, events, achievements, and circulars from Akshara Hgh School." />
       </Helmet>
 
       <div className="page-hero" style={{ paddingTop: 120 }}>

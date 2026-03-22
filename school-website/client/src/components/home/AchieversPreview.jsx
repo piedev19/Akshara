@@ -6,18 +6,60 @@ import { Trophy, Star, Award } from 'lucide-react';
 import './AchieversPreview.css';
 
 const TOPPERS = [
-  { name: 'Arjun Sharma', class: 'Class XII Science', score: '99.2%', rank: 'AIR 47 – JEE Advanced', img: 'https://i.pravatar.cc/150?img=11', category: 'Academic' },
-  { name: 'Priya Reddy', class: 'Class XII Commerce', score: '98.8%', rank: 'State Topper – CBSE', img: 'https://i.pravatar.cc/150?img=47', category: 'Academic' },
-  { name: 'Rahul Mehta', class: 'Class X', score: '99.0%', rank: 'District Rank 1 – CBSE', img: 'https://i.pravatar.cc/150?img=12', category: 'Academic' },
-  { name: 'Sneha Kulkarni', class: 'Class XII Arts', score: '97.6%', rank: 'NSD Scholarship Winner', img: 'https://i.pravatar.cc/150?img=48', category: 'Arts' },
-  { name: 'Karan Patel', class: 'Class XI', score: 'Gold Medal', rank: 'National Science Olympiad', img: 'https://i.pravatar.cc/150?img=15', category: 'Science' },
-  { name: 'Ananya Iyer', class: 'Class IX', score: '1st Place', rank: 'State Badminton – U-16', img: 'https://i.pravatar.cc/150?img=49', category: 'Sports' },
+  { 
+    name: 'Rahul Kumar', 
+    class: 'Class X', 
+    score: '10.0 GPA', 
+    rank: 'School Topper', 
+    img: null, 
+    category: 'Academic' 
+  },
+  { 
+    name: 'Sravani Reddy', 
+    class: 'Class X', 
+    score: '9.8 GPA', 
+    rank: 'Top Performer', 
+    img: null, 
+    category: 'Academic' 
+  },
+  { 
+    name: 'Mahesh Yadav', 
+    class: 'Class IX', 
+    score: 'Best Student Award', 
+    rank: 'Academic Excellence', 
+    img: null, 
+    category: 'Academic' 
+  },
+  { 
+    name: 'Anjali', 
+    class: 'Class VIII', 
+    score: '1st Prize', 
+    rank: 'School Drawing Competition', 
+    img: null, 
+    category: 'Arts' 
+  },
+  { 
+    name: 'Rohit', 
+    class: 'Class X', 
+    score: '1st Place', 
+    rank: 'Zonal Kabaddi', 
+    img: null, 
+    category: 'Sports' 
+  },
+  { 
+    name: 'Kavya', 
+    class: 'Class VII', 
+    score: 'Participation', 
+    rank: 'Science Fair', 
+    img: null, 
+    category: 'Science' 
+  },
 ];
 
 const RECORDS = [
-  { icon: <Trophy size={22} />, label: '100% Board Results', sub: '12 consecutive years' },
-  { icon: <Star size={22} />, label: '47 State Toppers', sub: 'In the last 5 years' },
-  { icon: <Award size={22} />, label: '200+ Olympiad Medals', sub: 'National & International' },
+  { icon: <Trophy size={22} />, label: 'Good Board Results', sub: 'Consistent pass percentage every year' },
+  { icon: <Star size={22} />, label: 'Active Participation', sub: 'Students in sports & cultural events' },
+  { icon: <Award size={22} />, label: 'School Level Achievements', sub: 'Competitions and annual events' },
 ];
 
 const categoryColor = { Academic: '#1a3a5c', Sports: '#2d7a3a', Arts: '#7a3a5c', Science: '#3a5c1a' };

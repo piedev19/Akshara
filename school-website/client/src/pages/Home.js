@@ -20,9 +20,9 @@ export default function Home() {
   return (
     <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit">
       <Helmet>
-        <title>Vidya Vihar International School | Excellence in Education | Admissions Open 2026-27</title>
-        <meta name="description" content="Vidya Vihar International School – CBSE affiliated school offering world-class education from Nursery to Class 12. Admissions open for 2026-27. Transport & Hostel available." />
-        <meta property="og:title" content="Vidya Vihar International School | Admissions Open 2026-27" />
+        <title>Akshara Hgh School | Excellence in Education | Admissions Open 2026-27</title>
+        <meta name="description" content="Akshara Hgh School – State affiliated school offering world-class education from Nursery to Class 12. Admissions open for 2026-27. Transport & Hostel available." />
+        <meta property="og:title" content="Akshara Hgh School | Admissions Open 2026-27" />
       </Helmet>
       <Hero />
       <NewsStrip />

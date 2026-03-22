@@ -47,8 +47,8 @@ export default function Gallery() {
   return (
     <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit">
       <Helmet>
-        <title>Photo Gallery | Vidya Vihar International School</title>
-        <meta name="description" content="Explore Vidya Vihar International School through our photo gallery — campus, events, sports, labs, arts, and hostel." />
+        <title>Photo Gallery | Akshara Hgh School</title>
+        <meta name="description" content="Explore Akshara Hgh School through our photo gallery — campus, events, sports, labs, arts, and hostel." />
       </Helmet>
 
       <div className="page-hero" style={{ paddingTop: 120 }}>
@@ -56,7 +56,7 @@ export default function Gallery() {
           <p className="breadcrumb">Home › Life @ School › <span>Gallery</span></p>
           <h1>Photo Gallery</h1>
           <p style={{ color: 'rgba(255,255,255,0.7)', maxWidth: 480, marginTop: 12 }}>
-            A glimpse into the vibrant life at Vidya Vihar — moments of learning, celebration, and achievement.
+            A glimpse into the vibrant life at Akshara — moments of learning, celebration, and achievement.
           </p>
         </div>
       </div>
@@ -107,7 +107,7 @@ export default function Gallery() {
           <p style={{ textAlign: 'center', color: 'var(--text-muted)', marginTop: 32, fontSize: '0.9rem' }}>
             Showing {filtered.length} photos · Follow us on{' '}
             <a href="https://instagram.com" target="_blank" rel="noreferrer" style={{ color: 'var(--navy)', fontWeight: 600 }}>
-              @vidyaviharschool
+              @aksharahighschool
             </a>{' '}
             for daily updates
           </p>

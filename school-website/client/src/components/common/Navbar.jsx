@@ -19,12 +19,12 @@ const NAV_ITEMS = [
   {
     label: 'Academics',
     path: '/academics',
-    children: [
-      { label: 'Curriculum & Programmes', path: '/academics#curriculum' },
-      { label: 'Achievers & Toppers', path: '/academics#achievers' },
-      { label: 'School Records', path: '/academics#records' },
-      { label: 'Facilities & Labs', path: '/academics#facilities' },
-    ],
+    // children: [
+    //   { label: 'Curriculum & Programmes', path: '/academics#curriculum' },
+    //   { label: 'Achievers & Toppers', path: '/academics#achievers' },
+    //   { label: 'School Records', path: '/academics#records' },
+    //   { label: 'Facilities & Labs', path: '/academics#facilities' },
+    // ],
   },
   {
     label: 'Life @ School',
@@ -63,8 +63,8 @@ export default function Navbar() {
       {/* Top bar */}
       <div className="navbar__topbar">
         <div className="container navbar__topbar-inner">
-          <span><Phone size={12} /> +91 98765 43210 &nbsp;|&nbsp; admissions@vidyavihar.edu.in</span>
-          <span>Affiliated to CBSE | School Code: 12345 | Academic Year 2026-27</span>
+          <span><Phone size={12} /> +91 9494817676 &nbsp;|&nbsp; admissions@akshara.edu.in</span>
+          <span>Affiliated to State | School Code: 504310 | Academic Year 2026-27</span>
         </div>
       </div>
 

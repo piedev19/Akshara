@@ -11,7 +11,7 @@ const BOARD = [
     img: 'https://i.pravatar.cc/200?img=51',
     qualification: 'Ph.D. in Education Management, IIM Ahmedabad',
     message: 'Our mission from day one has been simple: to nurture every child\'s potential, to build character alongside intellect, and to send into the world young people who are confident, compassionate, and capable of making a difference.',
-    since: '1998',
+    since: '2013',
   },
   {
     name: 'Mrs. Savita Gupta',
@@ -19,7 +19,7 @@ const BOARD = [
     img: 'https://i.pravatar.cc/200?img=44',
     qualification: 'M.Ed., MA in Child Psychology',
     message: 'A school is only as good as its teachers. We invest deeply in our faculty so that every student receives the personal attention, encouragement, and inspiration they need to flourish.',
-    since: '1998',
+    since: '2013',
   },
   {
     name: 'Mr. Vikram Singh Rathore',

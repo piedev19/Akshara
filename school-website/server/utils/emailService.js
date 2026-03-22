@@ -50,12 +50,12 @@ const admissionConfirmationTemplate = (admission) => `
 <body>
   <div class="container">
     <div class="header">
-      <h1>VIDYA VIHAR INTERNATIONAL SCHOOL</h1>
-      <p>Excellence in Education Since 1998</p>
+      <h1>Akshara Hgh School</h1>
+      <p>Excellence in Education Since 2013</p>
     </div>
     <div class="body">
       <p>Dear <strong>${admission.fatherName} & ${admission.motherName}</strong>,</p>
-      <p>Thank you for choosing Vidya Vihar International School for <strong>${admission.studentName}</strong>. We have received your application for admission to <strong>${admission.classAppliedFor}</strong> for the academic year <strong>${admission.academicYear}</strong>.</p>
+      <p>Thank you for choosing Akshara Hgh School for <strong>${admission.studentName}</strong>. We have received your application for admission to <strong>${admission.classAppliedFor}</strong> for the academic year <strong>${admission.academicYear}</strong>.</p>
       
       <div class="application-box">
         <p style="margin:0 0 8px; color:#666; font-size:13px; text-transform:uppercase; letter-spacing:1px;">Your Application Number</p>
@@ -89,14 +89,14 @@ const admissionConfirmationTemplate = (admission) => `
       <p>You can track your application status at <a href="${process.env.CLIENT_URL}/admission-status" style="color:#1a3a5c; font-weight:bold;">${process.env.CLIENT_URL}/admission-status</a> using your application number.</p>
       
       <p>For any queries, reach us at:<br>
-      📞 +91 98765 43210 | +91 87654 32109<br>
-      ✉️ admissions@vidyavihar.edu.in</p>
+      📞 +91 9494817676 | +91 9494817676<br>
+      ✉️ admissions@akshara.edu.in</p>
       
-      <p>Warm regards,<br><strong>Admissions Office</strong><br>Vidya Vihar International School</p>
+      <p>Warm regards,<br><strong>Admissions Office</strong><br>Akshara Hgh School</p>
     </div>
     <div class="footer">
-      <p>Vidya Vihar International School | 123 Education Avenue, Knowledge City - 500001</p>
-      <p>Affiliated to CBSE | School Code: 12345 | <a href="tel:+919876543210">+91 98765 43210</a></p>
+      <p>Akshara Hgh School | 123 Education Avenue, Knowledge City - 500001</p>
+      <p>Affiliated to State | School Code: 504310 | <a href="tel:+919876543210">+91 9494817676</a></p>
     </div>
   </div>
 </body>
@@ -107,7 +107,7 @@ const statusUpdateTemplate = (admission) => `
 <div style="max-width:600px;margin:0 auto;background:#fff;">
   <div style="background:linear-gradient(135deg,#1a3a5c 0%,#0d2137 100%);padding:40px;text-align:center;">
     <h1 style="color:#d4af37;font-size:24px;margin:0;">APPLICATION STATUS UPDATE</h1>
-    <p style="color:#a0c4e8;margin:8px 0 0;">Vidya Vihar International School</p>
+    <p style="color:#a0c4e8;margin:8px 0 0;">Akshara Hgh School</p>
   </div>
   <div style="padding:40px;">
     <p>Dear <strong>${admission.fatherName}</strong>,</p>
@@ -117,7 +117,7 @@ const statusUpdateTemplate = (admission) => `
       <p style="font-size:24px;font-weight:bold;color:#1a3a5c;margin:0;">${admission.status}</p>
     </div>
     ${admission.notes ? `<p><strong>Additional Information:</strong> ${admission.notes}</p>` : ''}
-    <p>For queries, contact admissions@vidyavihar.edu.in or call +91 98765 43210</p>
+    <p>For queries, contact admissions@akshara.edu.in or call +91 9494817676</p>
   </div>
 </div>
 </body></html>`;
@@ -125,7 +125,7 @@ const statusUpdateTemplate = (admission) => `
 exports.sendAdmissionConfirmation = async (admission) => {
   await sendEmail({
     to: admission.email,
-    subject: `Application Received - ${admission.applicationNumber} | Vidya Vihar International School`,
+    subject: `Application Received - ${admission.applicationNumber} | Akshara Hgh School`,
     html: admissionConfirmationTemplate(admission),
   });
 };
@@ -143,8 +143,8 @@ exports.sendAdmissionNotificationToAdmin = async (admission) => {
 exports.sendContactConfirmation = async (contact) => {
   await sendEmail({
     to: contact.email,
-    subject: `Message Received - Vidya Vihar International School`,
-    html: `<p>Dear ${contact.name},<br><br>Thank you for contacting us. We have received your message regarding "<strong>${contact.subject}</strong>" and will get back to you within 24 hours.<br><br>Regards,<br>Vidya Vihar International School</p>`,
+    subject: `Message Received - Akshara Hgh School`,
+    html: `<p>Dear ${contact.name},<br><br>Thank you for contacting us. We have received your message regarding "<strong>${contact.subject}</strong>" and will get back to you within 24 hours.<br><br>Regards,<br>Akshara Hgh School</p>`,
   });
 };
 

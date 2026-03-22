@@ -1,4 +1,4 @@
-# 🏫 Vidya Vihar International School — MERN Stack Website
+# 🏫 Akshara Hgh School — MERN Stack Website
 
 A fully-featured, production-ready school website built with MongoDB, Express, React, and Node.js.
 
@@ -90,12 +90,12 @@ pm2 startup && pm2 save
 # 4. Configure Nginx reverse proxy
 # server {
 #     listen 80;
-#     server_name vidyavihar.edu.in www.vidyavihar.edu.in;
+#     server_name akshara.edu.in www.akshara.edu.in;
 #     location / { proxy_pass http://localhost:5000; }
 # }
 
 # 5. SSL with Let's Encrypt
-# certbot --nginx -d vidyavihar.edu.in
+# certbot --nginx -d akshara.edu.in
 ```
 
 ### Option B: Separate Hosting
@@ -219,4 +219,4 @@ In `Footer.jsx` and `Contact.js`, replace:
 ## 📞 Support
 
 For questions about this codebase, contact the development team.
-For school admissions: **+91 98765 43210** | **admissions@vidyavihar.edu.in**
+For school admissions: **+91 9494817676** | **admissions@akshara.edu.in**

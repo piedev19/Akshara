@@ -32,8 +32,8 @@ export default function Contact() {
   return (
     <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit">
       <Helmet>
-        <title>Contact Us | Vidya Vihar International School</title>
-        <meta name="description" content="Get in touch with Vidya Vihar International School. Call, email, or visit us. Admissions helpdesk available Mon–Sat 8AM–5PM." />
+        <title>Contact Us | Akshara Hgh School</title>
+        <meta name="description" content="Get in touch with Akshara Hgh School. Call, email, or visit us. Admissions helpdesk available Mon–Sat 8AM–5PM." />
       </Helmet>
 
       <div className="page-hero" style={{ paddingTop: 120 }}>
@@ -51,9 +51,9 @@ export default function Contact() {
           {/* Contact Cards */}
           <div className="contact__cards">
             {[
-              { icon: <Phone size={24} />, title: 'Call Us', lines: ['+91 98765 43210', '+91 87654 32109'], note: 'Mon–Sat, 8AM–5PM', href: 'tel:+919876543210' },
-              { icon: <Mail size={24} />, title: 'Email Us', lines: ['admissions@vidyavihar.edu.in', 'info@vidyavihar.edu.in'], note: 'Reply within 24 hours', href: 'mailto:info@vidyavihar.edu.in' },
-              { icon: <MapPin size={24} />, title: 'Visit Us', lines: ['123 Education Avenue,', 'Knowledge City, Telangana – 500001'], note: 'GPS: 17.3850° N, 78.4867° E', href: 'https://maps.google.com' },
+              { icon: <Phone size={24} />, title: 'Call Us', lines: ['+91 9494817676', '+91 9494817676'], note: 'Mon–Sat, 8AM–5PM', href: 'tel:+919876543210' },
+              { icon: <Mail size={24} />, title: 'Email Us', lines: ['admissions@akshara.edu.in', 'info@akshara.edu.in'], note: 'Reply within 24 hours', href: 'mailto:info@akshara.edu.in' },
+              { icon: <MapPin size={24} />, title: 'Visit Us', lines: ['Kankapur,', 'Nirmal, Telangana – 504310'], note: 'GPS: 19.0830° N, 78.4281° E', href: 'https://maps.google.com' },
               { icon: <Clock size={24} />, title: 'Office Hours', lines: ['Mon–Fri: 8:00 AM – 5:00 PM', 'Saturday: 9:00 AM – 1:00 PM'], note: 'Closed Sundays & holidays', href: null },
             ].map((card, i) => (
               <motion.div
@@ -130,8 +130,7 @@ export default function Contact() {
               <div className="contact__map">
                 <iframe
                   title="School Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30452.018932040326!2d78.4483!3d17.4065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                  width="100%"
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30452.018932040326!2d78.4281026!3d19.0830481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcd8f1efe098c87%3A0x5de0cc8ea3068754!2sAkshara%20High%20School%20Kankapur!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"                  width="100%"
                   height="300"
                   style={{ border: 0, borderRadius: 12 }}
                   allowFullScreen=""
@@ -145,13 +144,13 @@ export default function Contact() {
                 <p>Stay updated with school news, events, and achievements.</p>
                 <div className="contact__social-links">
                   <a href="https://instagram.com" target="_blank" rel="noreferrer" className="contact__social-link contact__social-link--instagram">
-                    <Instagram size={20} /><div><strong>Instagram</strong><span>@vidyaviharschool</span></div>
+                    <Instagram size={20} /><div><strong>Instagram</strong><span>@aksharahighschool</span></div>
                   </a>
                   <a href="https://facebook.com" target="_blank" rel="noreferrer" className="contact__social-link contact__social-link--facebook">
-                    <Facebook size={20} /><div><strong>Facebook</strong><span>/vidyaviharschool</span></div>
+                    <Facebook size={20} /><div><strong>Facebook</strong><span>/aksharahighschool</span></div>
                   </a>
                   <a href="https://youtube.com" target="_blank" rel="noreferrer" className="contact__social-link contact__social-link--youtube">
-                    <Youtube size={20} /><div><strong>YouTube</strong><span>@vidyaviharschool</span></div>
+                    <Youtube size={20} /><div><strong>YouTube</strong><span>@aksharahighschool</span></div>
                   </a>
                 </div>
               </div>
@@ -159,7 +158,7 @@ export default function Contact() {
               <div className="contact__admission-box">
                 <h4>🏫 Admissions Enquiry?</h4>
                 <p>For quick admissions enquiries, call our dedicated helpdesk or apply directly online.</p>
-                <a href="tel:+919876543210" className="btn btn-primary btn-sm" style={{ width: '100%', justifyContent: 'center', marginBottom: 8 }}>📞 +91 98765 43210</a>
+                <a href="tel:+919876543210" className="btn btn-primary btn-sm" style={{ width: '100%', justifyContent: 'center', marginBottom: 8 }}>📞 +91 9494817676</a>
                 <a href="/admissions" className="btn btn-outline btn-sm" style={{ width: '100%', justifyContent: 'center' }}>Apply Online</a>
               </div>
             </div>

@@ -9,7 +9,7 @@ router.get('/info', (req, res) => {
       fee: 4500,
       facilities: ['24/7 Security', 'Wi-Fi', 'Study Hall', 'Dining', 'Indoor Games', 'Medical Room', 'Laundry'],
       warden: 'Mr. Rajesh Kumar',
-      contact: '+91 98765 43210',
+      contact: '+91 9494817676',
     },
     girls: {
       capacity: 150,

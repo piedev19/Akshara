@@ -18,8 +18,8 @@ export default function Footer() {
               </div>
             </div>
             <p className="footer__tagline">
-              Nurturing minds, building character, and shaping leaders since 1998. 
-              Affiliated to CBSE for classes Nursery through XII.
+              Nurturing minds, building character, and shaping leaders since 2013. 
+              Affiliated to State for classes Nursery through XII.
             </p>
             <div className="footer__social">
               <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram" className="footer__social-link">
@@ -33,8 +33,8 @@ export default function Footer() {
               </a>
             </div>
             <div className="footer__affiliation">
-              <span className="badge badge-gold">CBSE Affiliated</span>
-              <span className="badge badge-gold">School Code: 12345</span>
+              <span className="badge badge-gold">State Affiliated</span>
+              <span className="badge badge-gold">School Code: 504310</span>
             </div>
           </div>
 
@@ -80,7 +80,7 @@ export default function Footer() {
             <ul className="footer__contact">
               <li>
                 <MapPin size={16} />
-                <span>123 Education Avenue, Knowledge City, Telangana – 500001</span>
+                <span>Kankapur, Nirmal, Telangana – 504106</span>
               </li>
               <li>
                 <Phone size={16} />
@@ -92,11 +92,11 @@ export default function Footer() {
               </li>
               <li>
                 <Mail size={16} />
-                <a href="mailto:admissions@vidyavihar.edu.in">admissions@vidyavihar.edu.in</a>
+                <a href="mailto:admissions@akshara.edu.in">admissions@akshara.edu.in</a>
               </li>
               <li>
                 <Mail size={16} />
-                <a href="mailto:info@vidyavihar.edu.in">info@vidyavihar.edu.in</a>
+                <a href="mailto:info@akshara.edu.in">info@akshara.edu.in</a>
               </li>
             </ul>
 
@@ -115,7 +115,7 @@ export default function Footer() {
 
       <div className="footer__bottom">
         <div className="container footer__bottom-inner">
-          <p>© {new Date().getFullYear()} Vidya Vihar International School. All Rights Reserved.</p>
+          <p>© {new Date().getFullYear()} Akshara Hgh School. All Rights Reserved.</p>
           <div className="footer__bottom-links">
             <a href="#privacy">Privacy Policy</a>
             <a href="#terms">Terms of Use</a>

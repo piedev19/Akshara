@@ -59,7 +59,7 @@ export default function QuickAdmission() {
             </h2>
             <div className="gold-divider gold-divider--left" />
             <p style={{ color: 'rgba(255,255,255,0.75)', marginBottom: 28, fontSize: '1.05rem' }}>
-              Join the Vidya Vihar family. Fill in the quick form to begin your application — it takes just 2 minutes.
+              Join the Akshara family. Fill in the quick form to begin your application — it takes just 2 minutes.
             </p>
             <ul className="quick-admission__checklist">
               {['Online & spot admissions available','Instant application number via email','Track your application status anytime','Transport & hostel option in same form'].map((item, i) => (
@@ -67,8 +67,8 @@ export default function QuickAdmission() {
               ))}
             </ul>
             <div className="quick-admission__contact-box">
-              <div><strong>Call our Admissions Desk</strong><br />+91 98765 43210 | +91 87654 32109</div>
-              <div><strong>Email</strong><br />admissions@vidyavihar.edu.in</div>
+              <div><strong>Call our Admissions Desk</strong><br />+91 9494817676 | +91 9494817676</div>
+              <div><strong>Email</strong><br />admissions@akshara.edu.in</div>
               <div><strong>Office Hours</strong><br />Mon–Fri 8AM–5PM, Sat 9AM–1PM</div>
             </div>
           </motion.div>

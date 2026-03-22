@@ -29,16 +29,16 @@ const FACULTY = [
   { name: 'Mrs. Deepa Varghese', subject: 'Head – English', exp: '16 years', img: 'https://i.pravatar.cc/200?img=45', qual: 'M.A. English Literature, B.Ed.' },
   { name: 'Mr. Harish Tiwari', subject: 'Head – Physical Education', exp: '14 years', img: 'https://i.pravatar.cc/200?img=53', qual: 'B.P.Ed., Diploma in Sports Science' },
   { name: 'Mrs. Fatima Shaikh', subject: 'Head – Primary School', exp: '19 years', img: 'https://i.pravatar.cc/200?img=47', qual: 'M.Ed., Montessori Certified' },
-  { name: 'Mr. Ravi Shankar Pillai', subject: 'Head – Computer Science', exp: '12 years', img: 'https://i.pravatar.cc/200?img=54', qual: 'M.Tech. CS, CBSE Resource Person' },
+  { name: 'Mr. Ravi Shankar Pillai', subject: 'Head – Computer Science', exp: '12 years', img: 'https://i.pravatar.cc/200?img=54', qual: 'M.Tech. CS, State Resource Person' },
 ];
 
 const MILESTONES = [
-  { year: '1998', event: 'School founded by Dr. R.C. Gupta with 120 students in Classes I–VII' },
-  { year: '2002', event: 'CBSE affiliation granted; first Class X board exams with 100% results' },
+  { year: '2013', event: 'School founded by Dr. R.C. Gupta with 120 students in Classes I–VII' },
+  { year: '2002', event: 'State affiliation granted; first Class X board exams with 100% results' },
   { year: '2007', event: 'New academic wing and sports complex inaugurated; strength grows to 1,200 students' },
   { year: '2010', event: 'Classes XI–XII added; first board year sees state topper in Commerce stream' },
   { year: '2015', event: 'Hostel facilities opened for boys and girls; digital library inaugurated' },
-  { year: '2019', event: 'School recognized as "School of Excellence" by CBSE; strength crosses 2,500' },
+  { year: '2019', event: 'School recognized as "School of Excellence" by State; strength crosses 2,500' },
   { year: '2022', event: 'Smart classrooms installed in all sections; robotics lab established' },
   { year: '2025', event: 'Awarded National Green Schools honour; 1,200+ students enrolled for 2025-26' },
 ];
@@ -72,8 +72,8 @@ export default function About() {
   return (
     <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit">
       <Helmet>
-        <title>About Us | Vidya Vihar International School</title>
-        <meta name="description" content="Learn about Vidya Vihar International School — our history since 1998, vision, values, experienced faculty, and the Board of Directors guiding our institution." />
+        <title>About Us | Akshara Hgh School</title>
+        <meta name="description" content="Learn about Akshara Hgh School — our history since 2013, vision, values, experienced faculty, and the Board of Directors guiding our institution." />
       </Helmet>
 
       {/* Page Hero */}
@@ -113,7 +113,7 @@ export default function About() {
               transition={{ duration: 0.7, delay: 0.15 }}
             >
               <span className="section-eyebrow" style={{ margin: 0 }}>Our Story</span>
-              <h2 style={{ marginTop: 12 }}>Established in 1998,<br /><em>Built for the Future</em></h2>
+              <h2 style={{ marginTop: 12 }}>Established in 2013,<br /><em>Built for the Future</em></h2>
               <div className="gold-divider gold-divider--left" />
               <p>
                 AKSHARA HIGH SCHOOL KANKAPUR was established in 2013 and it is managed by the Pvt. Unaided. It is located in Rural area. 
@@ -128,7 +128,7 @@ export default function About() {
                 with 150+ experienced faculty, and infrastructure that rivals the best in the country.
               </p>
               <p style={{ marginTop: 16 }}>
-                CBSE affiliated since 2002, Vidya Vihar has consistently delivered 100% board results, produced state toppers,
+                State affiliated since 2002, Akshara has consistently delivered 100% board results, produced state toppers,
                 national Olympiad medallists, and alumni who have gone on to study at IITs, AIIMS, IIMs, and universities
                 across the globe.
               </p>

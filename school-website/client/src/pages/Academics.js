@@ -8,42 +8,99 @@ import './Academics.css';
 const pageVariants = { initial: { opacity: 0 }, animate: { opacity: 1, transition: { duration: 0.4 } }, exit: { opacity: 0 } };
 
 const STREAMS = [
-  { label: 'Pre-Primary', grades: 'Nursery, LKG, UKG', icon: '🌱', desc: 'Activity-based, play-centric learning that builds curiosity, social skills, and a love for school through Montessori-inspired methods.' },
-  { label: 'Primary', grades: 'Classes I – V', icon: '📚', desc: 'Strong foundational skills in Literacy, Numeracy, EVS, and Hindi with project-based learning and formative assessments.' },
-  { label: 'Middle School', grades: 'Classes VI – VIII', icon: '🔬', desc: 'Structured CBSE curriculum with separate labs, introduction to computers, and a wide range of co-curricular activities.' },
-  { label: 'Secondary', grades: 'Classes IX – X', icon: '🎯', desc: 'CBSE Board preparation with academic rigour, counselling, extra classes, and consistent doubt-clearing sessions.' },
-  { label: 'Senior Secondary', grades: 'Classes XI – XII', icon: '🏆', desc: 'Science (PCM/PCB), Commerce, and Humanities streams with expert faculty, career guidance, and JEE/NEET/CLAT coaching support.' },
+  { 
+    label: 'Pre-Primary', 
+    grades: 'Nursery, LKG, UKG', 
+    icon: '🌱', 
+    desc: 'A caring and engaging environment where young children learn through play, stories, and simple activities. Focus is on developing basic communication skills, confidence, and comfort with the school routine.' 
+  },
+  { 
+    label: 'Primary', 
+    grades: 'Classes I – V', 
+    icon: '📚', 
+    desc: 'Building strong foundations in reading, writing, and mathematics along with general awareness. Teaching includes classroom activities, basic projects, and regular assessments to support steady learning.' 
+  },
+  { 
+    label: 'Middle School', 
+    grades: 'Classes VI – VIII', 
+    icon: '🔬', 
+    desc: 'A structured approach to subjects like Science, Mathematics, and Social Studies with introduction to practical learning, basic computer knowledge, and co-curricular activities for overall development.' 
+  },
+  { 
+    label: 'Secondary', 
+    grades: 'Classes IX – X', 
+    icon: '🎯', 
+    desc: 'Focused preparation for state board examinations with regular tests, revision sessions, and guidance from teachers to help students perform with confidence.' 
+  },
+  { 
+    label: 'Higher Secondary', 
+    grades: 'Classes XI – XII', 
+    icon: '🏆', 
+    desc: 'Offering streams such as Science, Commerce, and Arts with dedicated teaching, concept clarity, and support for board exams and future academic choices.' 
+  },
+];
+const TOPPERS_10 = [
+  { name: 'Rahul Mehta', score: '10.0 GPA', year: '2025', img: null },
+  { name: 'Divya Krishnan', score: '10.0 GPA', year: '2025', img: null },
+  { name: 'Amir Khan', score: '9.8 GPA', year: '2025', img: null },
+  { name: 'Pooja Sharma', score: '9.7 GPA', year: '2024', img: null },
 ];
 
-const TOPPERS_10 = [
-  { name: 'Rahul Mehta', score: '99.0%', year: '2025', img: 'https://i.pravatar.cc/100?img=12' },
-  { name: 'Divya Krishnan', score: '98.6%', year: '2025', img: 'https://i.pravatar.cc/100?img=48' },
-  { name: 'Amir Khan', score: '98.4%', year: '2025', img: 'https://i.pravatar.cc/100?img=14' },
-  { name: 'Pooja Sharma', score: '98.2%', year: '2024', img: 'https://i.pravatar.cc/100?img=47' },
-];
-const TOPPERS_12 = [
-  { name: 'Arjun Sharma', score: '99.2%', year: '2025', stream: 'Science', img: 'https://i.pravatar.cc/100?img=11' },
-  { name: 'Priya Reddy', score: '98.8%', year: '2025', stream: 'Commerce', img: 'https://i.pravatar.cc/100?img=46' },
-  { name: 'Sneha Kulkarni', score: '97.6%', year: '2025', stream: 'Arts', img: 'https://i.pravatar.cc/100?img=49' },
-  { name: 'Rohan Desai', score: '97.4%', year: '2024', stream: 'Science', img: 'https://i.pravatar.cc/100?img=15' },
-];
+const TOPPERS_12 = []; // Not applicable
 
 const RECORDS = [
-  { icon: <Trophy size={28} />, title: '100% Board Results', detail: '12 consecutive years — Class X & XII both', color: '#d4af37' },
-  { icon: <Medal size={28} />, title: 'AIR 47 – JEE Advanced', detail: 'Arjun Sharma, Class XII PCM, 2025', color: '#c0c0c0' },
-  { icon: <Star size={28} />, title: '47 State Toppers', detail: 'Across all streams in the last 5 years', color: '#cd7f32' },
-  { icon: <Trophy size={28} />, title: 'NEET Rank 312', detail: 'Kavya Menon, Class XII PCB, 2024', color: '#d4af37' },
-  { icon: <Medal size={28} />, title: '200+ Olympiad Medals', detail: 'National & International – Maths, Science, English', color: '#c0c0c0' },
-  { icon: <Star size={28} />, title: 'Best School Award', detail: '"School of Excellence" – CBSE 2019 & 2023', color: '#cd7f32' },
+  { 
+    icon: <Trophy size={28} />, 
+    title: 'Consistent Board Results', 
+    detail: 'Good pass percentage in Class X every year', 
+    color: '#d4af37' 
+  },
+  { 
+    icon: <Medal size={28} />, 
+    title: 'School Top Performers', 
+    detail: 'Students achieving 9.5+ GPA in SSC exams', 
+    color: '#c0c0c0' 
+  },
+  { 
+    icon: <Star size={28} />, 
+    title: 'Participation in Competitions', 
+    detail: 'Students take part in district & school-level events', 
+    color: '#cd7f32' 
+  },
+  { 
+    icon: <Trophy size={28} />, 
+    title: 'Sports Achievements', 
+    detail: 'Zonal and inter-school level participation', 
+    color: '#d4af37' 
+  },
 ];
 
 const FACILITIES = [
-  { icon: <Microscope size={24} />, name: 'Science Labs', detail: '5 fully equipped labs' },
-  { icon: <Monitor size={24} />, name: 'Computer Centre', detail: '2 labs, 80 workstations each' },
-  { icon: <BookOpen size={24} />, name: 'Digital Library', detail: '25,000 books + 10,000 e-resources' },
-  { icon: <Dumbbell size={24} />, name: 'Sports Complex', detail: 'Cricket, Football, Basketball, Swimming' },
-  { icon: <Music size={24} />, name: 'Arts & Music Room', detail: 'Dedicated practice studios' },
-  { icon: <Star size={24} />, name: 'Robotics & STEM Lab', detail: 'With 3D printers & Arduino kits' },
+  { 
+    icon: <Microscope size={24} />, 
+    name: 'Science Lab', 
+    detail: 'Basic lab facilities for practical learning' 
+  },
+  { 
+    icon: <Monitor size={24} />, 
+    name: 'Computer Lab', 
+    detail: 'Basic computer education for students' 
+  },
+  // { 
+  //   icon: <BookOpen size={24} />, 
+  //   name: 'Library', 
+  //   detail: 'Collection of textbooks and reference books' 
+  // },
+  { 
+    icon: <Dumbbell size={24} />, 
+    name: 'Sports Facilities', 
+    detail: 'Playground for outdoor games and activities' 
+  },
+  { 
+    icon: <Music size={24} />, 
+    name: 'Cultural Activities', 
+    detail: 'Encouraging arts, music, and school events' 
+  },
 ];
 
 export default function Academics() {
@@ -56,8 +113,8 @@ export default function Academics() {
   return (
     <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit">
       <Helmet>
-        <title>Academics | Vidya Vihar International School</title>
-        <meta name="description" content="Explore Vidya Vihar's curriculum from Pre-Primary to Class XII, our top academic achievers, school records, and world-class facilities." />
+        <title>Academics | Akshara Hgh School</title>
+        <meta name="description" content="Explore Akshara's curriculum from Pre-Primary to Class XII, our top academic achievers, school records, and world-class facilities." />
       </Helmet>
 
       <div className="page-hero" style={{ paddingTop: 120 }}>
@@ -107,10 +164,10 @@ export default function Academics() {
             <span className="section-eyebrow">Toppers & Achievers</span>
             <h2 style={{ color: 'var(--white)' }}>Board Exam<br /><em style={{ color: 'var(--gold)' }}>Toppers</em></h2>
             <div className="gold-divider" />
-            <p className="subtitle" style={{ color: 'rgba(255,255,255,0.65)' }}>Year after year, our students set new benchmarks in CBSE board examinations.</p>
+            <p className="subtitle" style={{ color: 'rgba(255,255,255,0.65)' }}>Year after year, our students set new benchmarks in State board examinations.</p>
           </div>
           <div className="academics__topper-tabs">
-            {[['10','Class X Toppers'],['12','Class XII Toppers']].map(([v, l]) => (
+            {[['10','Class X Toppers']].map(([v, l]) => (
               <button key={v} className={`academics__topper-tab ${activeTab === v ? 'active' : ''}`} onClick={() => setActiveTab(v)}>{l}</button>
             ))}
           </div>

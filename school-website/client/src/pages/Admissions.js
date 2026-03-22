@@ -80,8 +80,8 @@ export default function Admissions() {
   return (
     <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit">
       <Helmet>
-        <title>Admissions 2026-27 | Vidya Vihar International School</title>
-        <meta name="description" content="Apply for admission to Vidya Vihar International School for the 2026-27 academic year. Online application form, spot admissions, and easy status tracking." />
+        <title>Admissions 2026-27 | Akshara Hgh School</title>
+        <meta name="description" content="Apply for admission to Akshara Hgh School for the 2026-27 academic year. Online application form, spot admissions, and easy status tracking." />
       </Helmet>
 
       <div className="page-hero" style={{ paddingTop: 120 }}>
@@ -102,7 +102,7 @@ export default function Admissions() {
                   <div style={{ fontSize: '4rem', marginBottom: 16 }}>🎉</div>
                   <CheckCircle size={52} color="var(--success)" style={{ marginBottom: 16 }} />
                   <h2>Application Submitted Successfully!</h2>
-                  <p>Thank you for choosing Vidya Vihar International School. Your application has been received.</p>
+                  <p>Thank you for choosing Akshara Hgh School. Your application has been received.</p>
                   <div className="admissions__appnum-box">
                     <div className="admissions__appnum-label">Your Application Number</div>
                     <div className="admissions__appnum">{success}</div>
@@ -390,8 +390,8 @@ export default function Admissions() {
               <div className="admissions__sidebar-card" style={{ background: 'var(--navy)', borderColor: 'var(--navy)' }}>
                 <h4 style={{ color: 'var(--white)' }}>📞 Admissions Helpdesk</h4>
                 <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.85rem', marginBottom: 12 }}>Any questions? Our admissions team is here to help.</p>
-                <a href="tel:+919876543210" className="btn btn-primary btn-sm" style={{ width: '100%', justifyContent: 'center', marginBottom: 8 }}>+91 98765 43210</a>
-                <a href="mailto:admissions@vidyavihar.edu.in" className="btn btn-secondary btn-sm" style={{ width: '100%', justifyContent: 'center' }}>Email Us</a>
+                <a href="tel:+919876543210" className="btn btn-primary btn-sm" style={{ width: '100%', justifyContent: 'center', marginBottom: 8 }}>+91 9494817676</a>
+                <a href="mailto:admissions@akshara.edu.in" className="btn btn-secondary btn-sm" style={{ width: '100%', justifyContent: 'center' }}>Email Us</a>
               </div>
 
               {/* Status checker */}

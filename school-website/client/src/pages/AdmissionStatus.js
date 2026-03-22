@@ -43,8 +43,8 @@ export default function AdmissionStatus() {
   return (
     <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit">
       <Helmet>
-        <title>Check Admission Status | Vidya Vihar International School</title>
-        <meta name="description" content="Track your child's admission application status at Vidya Vihar International School using your application number." />
+        <title>Check Admission Status | Akshara Hgh School</title>
+        <meta name="description" content="Track your child's admission application status at Akshara Hgh School using your application number." />
       </Helmet>
 
       <div className="page-hero" style={{ paddingTop: 120 }}>
@@ -175,8 +175,8 @@ export default function AdmissionStatus() {
               <div className="status__help">
                 <p>Need help? Contact our Admissions Helpdesk:</p>
                 <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', justifyContent: 'center', marginTop: 10 }}>
-                  <a href="tel:+919876543210" className="btn btn-primary btn-sm">📞 +91 98765 43210</a>
-                  <a href="mailto:admissions@vidyavihar.edu.in" className="btn btn-outline btn-sm">✉️ Email Us</a>
+                  <a href="tel:+919876543210" className="btn btn-primary btn-sm">📞 +91 9494817676</a>
+                  <a href="mailto:admissions@akshara.edu.in" className="btn btn-outline btn-sm">✉️ Email Us</a>
                 </div>
               </div>
             </motion.div>
@@ -189,7 +189,7 @@ export default function AdmissionStatus() {
               <ul>
                 <li>📧 Check the confirmation email sent to your registered email address</li>
                 <li>📱 Check the SMS sent to your registered mobile number</li>
-                <li>📞 Call our admissions desk: <a href="tel:+919876543210">+91 98765 43210</a></li>
+                <li>📞 Call our admissions desk: <a href="tel:+919876543210">+91 9494817676</a></li>
               </ul>
             </div>
           )}

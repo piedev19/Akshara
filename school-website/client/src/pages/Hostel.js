@@ -17,7 +17,7 @@ const FACILITY_ICONS = {
 };
 
 const FALLBACK = {
-  boys: { capacity: 200, available: 45, fee: 4500, facilities: ['24/7 Security','Wi-Fi','Study Hall','Dining','Indoor Games','Medical Room','Laundry'], warden: 'Mr. Rajesh Kumar', contact: '+91 98765 43210' },
+  boys: { capacity: 200, available: 45, fee: 4500, facilities: ['24/7 Security','Wi-Fi','Study Hall','Dining','Indoor Games','Medical Room','Laundry'], warden: 'Mr. Rajesh Kumar', contact: '+91 9494817676' },
   girls: { capacity: 150, available: 30, fee: 4500, facilities: ['24/7 CCTV','Wi-Fi','Study Hall','Dining','Indoor Games','Medical Room','Salon','Laundry'], warden: 'Mrs. Sunita Sharma', contact: '+91 98765 43211' },
   rules: ['Mobile phones not permitted on weekdays','Visiting hours: Sundays 10 AM – 5 PM','Lights out: 10:30 PM','Mandatory study hours: 7 PM – 9 PM'],
   mealtimes: { breakfast: '7:00 AM – 8:00 AM', lunch: '12:30 PM – 1:30 PM', snacks: '4:30 PM – 5:00 PM', dinner: '7:30 PM – 8:30 PM' },
@@ -40,7 +40,7 @@ export default function Hostel() {
   return (
     <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit">
       <Helmet>
-        <title>Hostel Facility | Vidya Vihar International School</title>
+        <title>Hostel Facility | Akshara Hgh School</title>
         <meta name="description" content="Safe, supervised hostel for boys and girls. Nutritious meals, study rooms, 24/7 CCTV, and a resident medical officer. A true home away from home." />
       </Helmet>
 
