@@ -92,7 +92,7 @@
   line-height: 1.7;
 }
 
-.hero__cta { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; }
+.hero__cta { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 13px; }
 
 .hero__badge {
   display: inline-flex;
@@ -110,7 +110,7 @@
   width: 8px; height: 8px;
   border-radius: 50%;
   background: #4ade80;
-  box-shadow: 0 0 8px rgba(74, 222, 128, 0.8);
+  box-shadow: 0 0 8px rgba(74, 222, 113, 0.8);
   animation: blink 1.5s ease-in-out infinite;
 }
 @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
@@ -135,7 +135,7 @@
 }
 .hero__indicator.active {
   background: var(--gold);
-  height: 28px;
+  height: 13px;
   border-radius: 4px;
 }
 

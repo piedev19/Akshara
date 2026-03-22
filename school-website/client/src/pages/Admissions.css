@@ -7,7 +7,7 @@
 .admissions__stepper {
   display: flex;
   align-items: center;
-  margin-bottom: 28px;
+  margin-bottom: 13px;
   overflow-x: auto;
   padding-bottom: 4px;
 }
@@ -57,7 +57,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-top: 28px;
+  margin-top: 13px;
   padding-top: 20px;
   border-top: 1px solid var(--border);
 }

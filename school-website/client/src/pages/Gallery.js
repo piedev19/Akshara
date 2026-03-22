@@ -10,7 +10,7 @@ const CATEGORIES = ['All', 'Campus', 'Sports', 'Events', 'Labs', 'Arts', 'Hostel
 
 const PHOTOS = [
   { id: 1, cat: 'Campus', title: 'Main Building', src: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=700&q=75', span: 'wide' },
-  { id: 2, cat: 'Sports', title: 'Cricket Ground', src: 'https://images.unsplash.com/photo-1540747913346-19212a4cf528?w=700&q=75' },
+  { id: 2, cat: 'Sports', title: 'Cricket Ground', src: 'https://images.unsplash.com/photo-1540747913346-19212a4cf513?w=700&q=75' },
   { id: 3, cat: 'Events', title: 'Annual Day 2025', src: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=700&q=75' },
   { id: 4, cat: 'Labs', title: 'Science Laboratory', src: 'https://images.unsplash.com/photo-1532094349884-543559c10c2b?w=700&q=75' },
   { id: 5, cat: 'Campus', title: 'Library Wing', src: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=700&q=75', span: 'tall' },
@@ -47,8 +47,8 @@ export default function Gallery() {
   return (
     <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit">
       <Helmet>
-        <title>Photo Gallery | Akshara Hgh School</title>
-        <meta name="description" content="Explore Akshara Hgh School through our photo gallery — campus, events, sports, labs, arts, and hostel." />
+        <title>Photo Gallery | Akshara High School</title>
+        <meta name="description" content="Explore Akshara High School through our photo gallery — campus, events, sports, labs, arts, and hostel." />
       </Helmet>
 
       <div className="page-hero" style={{ paddingTop: 120 }}>
@@ -107,7 +107,7 @@ export default function Gallery() {
           <p style={{ textAlign: 'center', color: 'var(--text-muted)', marginTop: 32, fontSize: '0.9rem' }}>
             Showing {filtered.length} photos · Follow us on{' '}
             <a href="https://instagram.com" target="_blank" rel="noreferrer" style={{ color: 'var(--navy)', fontWeight: 600 }}>
-              @aksharahighschool
+              @aksharaschool
             </a>{' '}
             for daily updates
           </p>

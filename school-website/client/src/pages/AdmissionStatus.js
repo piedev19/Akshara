@@ -8,12 +8,12 @@ import './AdmissionStatus.css';
 const pageVariants = { initial: { opacity: 0 }, animate: { opacity: 1, transition: { duration: 0.4 } }, exit: { opacity: 0 } };
 
 const STATUS_CONFIG = {
-  Pending:       { icon: <Clock size={28} />,       color: '#e67e22', bg: '#fef3e2', label: 'Pending Review', desc: 'Your application has been received and is in the queue for review. Expect a response within 48 working hours.' },
-  'Under Review':{ icon: <FileText size={28} />,    color: '#3498db', bg: '#e8f4fd', label: 'Under Review',   desc: 'Our admissions team is currently reviewing your application. You may receive a call from us shortly.' },
-  Shortlisted:   { icon: <Star size={28} />,        color: '#9b59b6', bg: '#f5eef8', label: 'Shortlisted!',   desc: 'Congratulations! Your application has been shortlisted. Please check your email for the next steps and document verification schedule.' },
-  Admitted:      { icon: <CheckCircle size={28} />, color: '#2d7a3a', bg: '#e8f5ea', label: 'Admitted! 🎉',   desc: 'Congratulations! Your child has been admitted. Please complete the fee payment and document submission within 7 days to confirm the seat.' },
-  Waitlisted:    { icon: <AlertCircle size={28} />, color: '#7f8c8d', bg: '#f2f3f4', label: 'Waitlisted',     desc: 'Your application is on the waitlist. You will be notified as soon as a seat becomes available. We appreciate your patience.' },
-  Rejected:      { icon: <XCircle size={28} />,     color: '#c0392b', bg: '#fde8e6', label: 'Not Selected',   desc: 'Unfortunately, we are unable to offer admission at this time due to limited seats. Please contact the admissions office for further guidance.' },
+  Pending:       { icon: <Clock size={13} />,       color: '#e67e22', bg: '#fef3e2', label: 'Pending Review', desc: 'Your application has been received and is in the queue for review. Expect a response within 48 working hours.' },
+  'Under Review':{ icon: <FileText size={13} />,    color: '#3498db', bg: '#e8f4fd', label: 'Under Review',   desc: 'Our admissions team is currently reviewing your application. You may receive a call from us shortly.' },
+  Shortlisted:   { icon: <Star size={13} />,        color: '#9b59b6', bg: '#f5eef8', label: 'Shortlisted!',   desc: 'Congratulations! Your application has been shortlisted. Please check your email for the next steps and document verification schedule.' },
+  Admitted:      { icon: <CheckCircle size={13} />, color: '#2d7a3a', bg: '#e8f5ea', label: 'Admitted! 🎉',   desc: 'Congratulations! Your child has been admitted. Please complete the fee payment and document submission within 7 days to confirm the seat.' },
+  Waitlisted:    { icon: <AlertCircle size={13} />, color: '#7f8c8d', bg: '#f2f3f4', label: 'Waitlisted',     desc: 'Your application is on the waitlist. You will be notified as soon as a seat becomes available. We appreciate your patience.' },
+  Rejected:      { icon: <XCircle size={13} />,     color: '#c0392b', bg: '#fde8e6', label: 'Not Selected',   desc: 'Unfortunately, we are unable to offer admission at this time due to limited seats. Please contact the admissions office for further guidance.' },
 };
 
 export default function AdmissionStatus() {
@@ -43,8 +43,8 @@ export default function AdmissionStatus() {
   return (
     <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit">
       <Helmet>
-        <title>Check Admission Status | Akshara Hgh School</title>
-        <meta name="description" content="Track your child's admission application status at Akshara Hgh School using your application number." />
+        <title>Check Admission Status | Akshara High School</title>
+        <meta name="description" content="Track your child's admission application status at Akshara High School using your application number." />
       </Helmet>
 
       <div className="page-hero" style={{ paddingTop: 120 }}>

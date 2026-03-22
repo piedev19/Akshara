@@ -7,7 +7,7 @@
   background: var(--cream);
   border: 1px solid var(--border);
   border-radius: 14px;
-  padding: 28px;
+  padding: 13px;
   transition: all 0.3s var(--ease);
 }
 .transport__feature-card:hover { background: var(--white); box-shadow: var(--shadow-md); transform: translateY(-5px); border-color: var(--gold); }
@@ -28,7 +28,7 @@
 .transport__routes-layout {
   display: grid;
   grid-template-columns: 340px 1fr;
-  gap: 28px;
+  gap: 13px;
   align-items: start;
 }
 
@@ -96,7 +96,7 @@
   z-index: 1;
 }
 .transport__stop-dot--school { background: var(--gold); color: var(--navy); }
-.transport__stop-line { width: 2px; flex: 1; background: var(--border); min-height: 28px; margin: 4px 0; }
+.transport__stop-line { width: 2px; flex: 1; background: var(--border); min-height: 13px; margin: 4px 0; }
 .transport__stop-info { padding: 4px 0 20px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 .transport__stop-name { font-size: 0.9rem; color: var(--charcoal); font-weight: 500; }
 .transport__stop-name.school { color: var(--navy); font-weight: 700; }

@@ -5,7 +5,7 @@
   max-width: 800px;
   margin: 0 auto 24px;
 }
-.testimonials__stage { flex: 1; min-height: 280px; display: flex; align-items: center; }
+.testimonials__stage { flex: 1; min-height: 130px; display: flex; align-items: center; }
 .testimonials__card {
   background: var(--cream);
   border-radius: 16px;
@@ -17,7 +17,7 @@
 .testimonials__card::before {
   content: '\201C';
   position: absolute;
-  top: 16px; left: 28px;
+  top: 16px; left: 13px;
   font-family: var(--font-display);
   font-size: 5rem;
   color: var(--gold);

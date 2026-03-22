@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="footer__brand">
             <div className="footer__logo">
-              <div className="footer__logo-icon"><GraduationCap size={28} /></div>
+              <div className="footer__logo-icon"><GraduationCap size={13} /></div>
               <div>
                 <div className="footer__logo-name">Akshara</div>
                 <div className="footer__logo-sub">High School</div>
@@ -19,7 +19,7 @@ export default function Footer() {
             </div>
             <p className="footer__tagline">
               Nurturing minds, building character, and shaping leaders since 2013. 
-              Affiliated to State for classes Nursery through XII.
+              Affiliated to BSET for classes Nursery through X.
             </p>
             <div className="footer__social">
               <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram" className="footer__social-link">
@@ -33,8 +33,8 @@ export default function Footer() {
               </a>
             </div>
             <div className="footer__affiliation">
-              <span className="badge badge-gold">State Affiliated</span>
-              <span className="badge badge-gold">School Code: 504310</span>
+              <span className="badge badge-gold">BSET Affiliated</span>
+              <span className="badge badge-gold">School Code: 3604</span>
             </div>
           </div>
 
@@ -80,7 +80,7 @@ export default function Footer() {
             <ul className="footer__contact">
               <li>
                 <MapPin size={16} />
-                <span>Kankapur, Nirmal, Telangana – 504106</span>
+                <span>Near KNR Garden,   Kankapur, Nirmal - 504101</span>
               </li>
               <li>
                 <Phone size={16} />
@@ -92,7 +92,7 @@ export default function Footer() {
               </li>
               <li>
                 <Mail size={16} />
-                <a href="mailto:admissions@akshara.edu.in">admissions@akshara.edu.in</a>
+                <a href="mailto:aksharaschoolkhankapur@gmail.com">aksharaschoolkhankapur@gmail.com</a>
               </li>
               <li>
                 <Mail size={16} />
@@ -115,7 +115,7 @@ export default function Footer() {
 
       <div className="footer__bottom">
         <div className="container footer__bottom-inner">
-          <p>© {new Date().getFullYear()} Akshara Hgh School. All Rights Reserved.</p>
+          <p>© {new Date().getFullYear()} Akshara High School. All Rights Reserved.</p>
           <div className="footer__bottom-links">
             <a href="#privacy">Privacy Policy</a>
             <a href="#terms">Terms of Use</a>

@@ -6,60 +6,18 @@ import { Trophy, Star, Award } from 'lucide-react';
 import './AchieversPreview.css';
 
 const TOPPERS = [
-  { 
-    name: 'Rahul Kumar', 
-    class: 'Class X', 
-    score: '10.0 GPA', 
-    rank: 'School Topper', 
-    img: null, 
-    category: 'Academic' 
-  },
-  { 
-    name: 'Sravani Reddy', 
-    class: 'Class X', 
-    score: '9.8 GPA', 
-    rank: 'Top Performer', 
-    img: null, 
-    category: 'Academic' 
-  },
-  { 
-    name: 'Mahesh Yadav', 
-    class: 'Class IX', 
-    score: 'Best Student Award', 
-    rank: 'Academic Excellence', 
-    img: null, 
-    category: 'Academic' 
-  },
-  { 
-    name: 'Anjali', 
-    class: 'Class VIII', 
-    score: '1st Prize', 
-    rank: 'School Drawing Competition', 
-    img: null, 
-    category: 'Arts' 
-  },
-  { 
-    name: 'Rohit', 
-    class: 'Class X', 
-    score: '1st Place', 
-    rank: 'Zonal Kabaddi', 
-    img: null, 
-    category: 'Sports' 
-  },
-  { 
-    name: 'Kavya', 
-    class: 'Class VII', 
-    score: 'Participation', 
-    rank: 'Science Fair', 
-    img: null, 
-    category: 'Science' 
-  },
+  { name: 'Arjun Sharma', class: 'Class X', score: '99.2%', img: 'https://assets.leetcode.com/users/default_avatar.jpg', category: 'Academic' },
+  { name: 'Priya Reddy', class: 'Class X', score: '98.8%',  img: 'https://assets.leetcode.com/users/default_avatar.jpg', category: 'Academic' },
+  { name: 'Rahul Mehta', class: 'Class X', score: '99.0%',  img: 'https://assets.leetcode.com/users/default_avatar.jpg', category: 'Academic' },
+  { name: 'Sneha Kulkarni', class: 'Class X', score: '97.6%', img: 'https://assets.leetcode.com/users/default_avatar.jpg', category: 'Arts' },
+  { name: 'Karan Patel', class: 'Class VIII', score: 'Gold Medal', img: 'https://assets.leetcode.com/users/default_avatar.jpg', category: 'Science' },
+  { name: 'Ananya Iyer', class: 'Class XI', score: '1st Place', img: 'https://assets.leetcode.com/users/default_avatar.jpg', category: 'Sports' },
 ];
 
 const RECORDS = [
-  { icon: <Trophy size={22} />, label: 'Good Board Results', sub: 'Consistent pass percentage every year' },
-  { icon: <Star size={22} />, label: 'Active Participation', sub: 'Students in sports & cultural events' },
-  { icon: <Award size={22} />, label: 'School Level Achievements', sub: 'Competitions and annual events' },
+  { icon: <Trophy size={22} />, label: '100% Board Results', sub: '6 consecutive years' },
+  { icon: <Star size={22} />, label: '8 State Toppers', sub: 'In the last 5 years' },
+  { icon: <Award size={22} />, label: '20+ Olympiad Medals', sub: 'National & High ' },
 ];
 
 const categoryColor = { Academic: '#1a3a5c', Sports: '#2d7a3a', Arts: '#7a3a5c', Science: '#3a5c1a' };

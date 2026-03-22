@@ -32,8 +32,8 @@ export default function Contact() {
   return (
     <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit">
       <Helmet>
-        <title>Contact Us | Akshara Hgh School</title>
-        <meta name="description" content="Get in touch with Akshara Hgh School. Call, email, or visit us. Admissions helpdesk available Mon–Sat 8AM–5PM." />
+        <title>Contact Us | Akshara High School</title>
+        <meta name="description" content="Get in touch with Akshara High School. Call, email, or visit us. Admissions helpdesk available Mon–Sat 8AM–5PM." />
       </Helmet>
 
       <div className="page-hero" style={{ paddingTop: 120 }}>
@@ -51,9 +51,9 @@ export default function Contact() {
           {/* Contact Cards */}
           <div className="contact__cards">
             {[
-              { icon: <Phone size={24} />, title: 'Call Us', lines: ['+91 9494817676', '+91 9494817676'], note: 'Mon–Sat, 8AM–5PM', href: 'tel:+919876543210' },
-              { icon: <Mail size={24} />, title: 'Email Us', lines: ['admissions@akshara.edu.in', 'info@akshara.edu.in'], note: 'Reply within 24 hours', href: 'mailto:info@akshara.edu.in' },
-              { icon: <MapPin size={24} />, title: 'Visit Us', lines: ['Kankapur,', 'Nirmal, Telangana – 504310'], note: 'GPS: 19.0830° N, 78.4281° E', href: 'https://maps.google.com' },
+              { icon: <Phone size={24} />, title: 'Call Us', lines: ['+91 98765 43210', '+91 94948 17575'], note: 'Mon–Sat, 8AM–5PM', href: 'tel:+919876543210' },
+              { icon: <Mail size={24} />, title: 'Email Us', lines: ['aksharaschoolkhankapur@gmail.com', 'info@akshara.edu.in'], note: 'Reply within 24 hours', href: 'mailto:info@akshara.edu.in' },
+              { icon: <MapPin size={24} />, title: 'Visit Us', lines: ['Near KNR Garden ,', 'Kankapur, Nirmal, Telangana – 504101'], note: 'GPS: 17.3850° N, 78.4867° E', href: 'https://maps.google.com' },
               { icon: <Clock size={24} />, title: 'Office Hours', lines: ['Mon–Fri: 8:00 AM – 5:00 PM', 'Saturday: 9:00 AM – 1:00 PM'], note: 'Closed Sundays & holidays', href: null },
             ].map((card, i) => (
               <motion.div
@@ -77,7 +77,7 @@ export default function Contact() {
             {/* Form */}
             <div className="contact__form-wrapper">
               <h3 style={{ fontFamily: 'var(--font-display)', color: 'var(--navy)', marginBottom: 6, fontSize: '1.5rem' }}>Send Us a Message</h3>
-              <p style={{ color: 'var(--text-muted)', marginBottom: 28, fontSize: '0.9rem' }}>Fill in the form and we'll get back to you within 24 hours.</p>
+              <p style={{ color: 'var(--text-muted)', marginBottom: 13, fontSize: '0.9rem' }}>Fill in the form and we'll get back to you within 24 hours.</p>
 
               {sent ? (
                 <div style={{ textAlign: 'center', padding: '40px 20px', background: 'var(--cream)', borderRadius: 12 }}>
@@ -144,13 +144,13 @@ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30452.018932040326!2d
                 <p>Stay updated with school news, events, and achievements.</p>
                 <div className="contact__social-links">
                   <a href="https://instagram.com" target="_blank" rel="noreferrer" className="contact__social-link contact__social-link--instagram">
-                    <Instagram size={20} /><div><strong>Instagram</strong><span>@aksharahighschool</span></div>
+                    <Instagram size={20} /><div><strong>Instagram</strong><span>@aksharaschool</span></div>
                   </a>
                   <a href="https://facebook.com" target="_blank" rel="noreferrer" className="contact__social-link contact__social-link--facebook">
-                    <Facebook size={20} /><div><strong>Facebook</strong><span>/aksharahighschool</span></div>
+                    <Facebook size={20} /><div><strong>Facebook</strong><span>/aksharaschool</span></div>
                   </a>
                   <a href="https://youtube.com" target="_blank" rel="noreferrer" className="contact__social-link contact__social-link--youtube">
-                    <Youtube size={20} /><div><strong>YouTube</strong><span>@aksharahighschool</span></div>
+                    <Youtube size={20} /><div><strong>YouTube</strong><span>@aksharaschool</span></div>
                   </a>
                 </div>
               </div>

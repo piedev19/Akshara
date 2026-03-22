@@ -50,28 +50,57 @@
 .about__milestone {
   display: grid;
   grid-template-columns: 1fr 60px 1fr;
-  align-items: center;
-  gap: 16px;
+  justify-content: center;
+  align-items: start;
+  gap:16px;
   margin-bottom: 32px;
+}/* LEFT SIDE */
+.about__milestone:nth-child(odd) .about__milestone-year {
+  grid-column: 1;
+  text-align: right;
 }
-.about__milestone:nth-child(odd) .about__milestone-year { text-align: right; }
-.about__milestone:nth-child(odd) .about__milestone-text { order: 3; }
-.about__milestone:nth-child(even) .about__milestone-year { order: 3; }
-.about__milestone:nth-child(even) .about__milestone-text { text-align: right; }
+
+.about__milestone:nth-child(odd) .about__milestone-text {
+  grid-column: 1;
+  text-align: right;
+}
+
+/* RIGHT SIDE */
+.about__milestone:nth-child(even) .about__milestone-year {
+  grid-column: 3;
+  text-align: left;
+}
+
+.about__milestone:nth-child(even) .about__milestone-text {
+  grid-column: 3;
+  text-align: left;
+}
 .about__milestone-year {
   font-family: var(--font-display);
   font-size: 1.3rem;
   font-weight: 700;
   color: var(--gold);
 }
-.about__milestone-line { display: flex; justify-content: center; }
+.about__milestone-line {
+  grid-column: 2;   /* 💥 THIS FIXES EVERYTHING */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+}
+
 .about__milestone-dot {
-  width: 16px; height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
   background: var(--gold);
   border-radius: 50%;
   border: 3px solid var(--white);
   box-shadow: 0 0 0 2px var(--gold);
 }
+
 .about__milestone-text {
   background: var(--white);
   border: 1px solid var(--border);
@@ -81,6 +110,45 @@
   color: var(--charcoal);
   box-shadow: var(--shadow-sm);
   line-height: 1.6;
+}
+@media (max-width: 1024px) {
+
+  /* ✅ MOVE GOLD LINE TO LEFT */
+  .about__timeline::before {
+    left: 30px;   /* 🔥 shift line */
+    transform: none;
+  }
+
+  /* ✅ CHANGE GRID */
+  .about__milestone {
+    grid-template-columns: 60px 1fr;
+    align-items: flex-start;
+  }
+
+  /* ✅ DOT ALWAYS LEFT */
+  .about__milestone-line {
+    grid-column: 1;
+    justify-content: center;
+  }
+
+  /* ✅ TEXT ALWAYS RIGHT SIDE */
+  .about__milestone-text {
+    grid-column: 2;
+    text-align: left;
+    max-width: 100%;
+  }
+
+  /* ❌ REMOVE LEFT/RIGHT LOGIC */
+  .about__milestone:nth-child(odd) .about__milestone-text,
+  .about__milestone:nth-child(even) .about__milestone-text {
+    grid-column: 2;
+    text-align: left;
+  }
+
+  /* ❌ REMOVE YEAR POSITIONING */
+  .about__milestone-year {
+    display: none;
+  }
 }
 
 /* Vision */

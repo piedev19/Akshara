@@ -78,8 +78,8 @@
 .facilities__info h3 { font-size: 1.6rem; margin-bottom: 16px; }
 .facilities__info p { color: var(--text-muted); line-height: 1.8; font-size: 0.95rem; margin-bottom: 24px; }
 
-.facilities__highlights { list-style: none; display: flex; flex-direction: column; gap: 12px; }
-.facilities__highlights li {
+.facilities__High lights { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.facilities__High lights li {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -103,7 +103,7 @@
 @media (max-width: 900px) {
   .facilities__panel { grid-template-columns: 1fr; }
   .facilities__img-wrapper { height: 260px; }
-  .facilities__info { padding: 28px; }
+  .facilities__info { padding: 13px; }
 }
 @media (max-width: 600px) {
   .facilities__tab { font-size: 0.78rem; padding: 8px 12px; }

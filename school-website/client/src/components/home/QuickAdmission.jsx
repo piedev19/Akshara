@@ -67,8 +67,8 @@ export default function QuickAdmission() {
               ))}
             </ul>
             <div className="quick-admission__contact-box">
-              <div><strong>Call our Admissions Desk</strong><br />+91 9494817676 | +91 9494817676</div>
-              <div><strong>Email</strong><br />admissions@akshara.edu.in</div>
+              <div><strong>Call our Admissions Desk</strong><br />+91 94948 17676 | +91 94948 17575</div>
+              <div><strong>Email</strong><br />aksharaschoolkhankapur@gmail.com</div>
               <div><strong>Office Hours</strong><br />Mon–Fri 8AM–5PM, Sat 9AM–1PM</div>
             </div>
           </motion.div>

@@ -1,7 +1,7 @@
 {
   "name": "vidya-vihar-school-website",
   "version": "1.0.0",
-  "description": "Full-stack MERN school website for Akshara Hgh School",
+  "description": "Full-stack MERN school website for Akshara High School",
   "private": true,
   "scripts": {
     "install:all": "npm install && cd server && npm install && cd ../client && npm install",
