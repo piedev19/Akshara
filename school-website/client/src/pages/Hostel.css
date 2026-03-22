@@ -51,7 +51,7 @@
   padding: 18px;
   text-align: center;
 }
-.hostel__wing-stat--High light { border-color: var(--gold); background: var(--gold-pale); }
+.hostel__wing-stat--highlight { border-color: var(--gold); background: var(--gold-pale); }
 .hostel__wing-stat-val { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--navy); }
 .hostel__wing-stat-label { font-size: 0.8rem; color: var(--text-muted); margin-top: 3px; }
 
