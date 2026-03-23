@@ -26,9 +26,9 @@
 
 .hostel__wing-detail {
   display: grid;
-  grid-template-columns: 1fr 130px;
-  gap: 13px;
-  align-items: start;
+  grid-template-columns: 1fr 280px; /* or 300px */
+  gap: 20px;
+  /* margin-top: 2rem; */
 }
 .hostel__wing-main {
   background: var(--white);
@@ -93,7 +93,7 @@
 }
 .hostel__warden-card h4 { color: var(--navy); font-size: 1rem; margin-bottom: 6px; }
 .hostel__warden-card p { font-size: 0.82rem; color: var(--text-muted); }
-.hostel__apply-card { background: var(--gold-pale); border: 1.5px solid var(--gold); border-radius: 12px; padding: 20px; }
+.hostel__apply-card { background: var(--gold-pale); border: 1.5px solid var(--gold); border-radius: 12px; padding: 20px; margin-top: 1rem; }
 .hostel__apply-card h4 { color: var(--navy); margin-bottom: 8px; font-size: 0.95rem; }
 .hostel__apply-card p { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 14px; }
 
@@ -137,4 +137,46 @@
   .hostel__img-strip { grid-template-columns: 1fr; height: auto; }
   .hostel__wing-stats { grid-template-columns: repeat(3, 1fr); }
   .hostel__facilities-grid { grid-template-columns: 1fr 1fr; }
+}
+
+
+/* Contact text spacing */
+.contact-text {
+  margin-bottom: 8px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* Fix phone button */
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Apply card button (clean + premium) */
+.apply-btn {
+  display: block;
+  width: 100%;
+  margin-top: 14px;
+  padding: 10px;
+
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+
+  border: 1.5px solid #0f2a44;
+  border-radius: 8px;
+
+  color: #0f2a44;
+  background-color: transparent;
+
+  transition: all 0.25s ease;
+}
+
+/* Hover effect */
+.apply-btn:hover {
+  background-color: #0f2a44;
+  color: #fff;
 }

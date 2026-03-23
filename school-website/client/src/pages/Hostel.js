@@ -173,18 +173,27 @@ export default function Hostel() {
                 </div>
                 <div className="hostel__warden-badge">{activeWing === 'boys' ? 'Boys' : 'Girls'} Warden</div>
                 <h4>{wing.warden}</h4>
-                <p>Available 24/7 for student welfare and parent communication</p>
-                <a href={`tel:${wing.contact.replace(/\s/g, '')}`} className="btn btn-primary btn-sm" style={{ width: '100%', justifyContent: 'center', marginTop: 8 }}>
-                  📞 {wing.contact}
-                </a>
-              </div>
+              <p className="contact-text">
+                Available 24/7 for student welfare and parent communication
+              </p>
+
+              <a
+                href={`tel:${wing.contact.replace(/\s/g, '')}`}
+                className="btn btn-primary btn-sm w-100 contact-btn"
+              >
+                📞 {wing.contact}
+              </a>
 
               <div className="hostel__apply-card">
                 <h4>Apply for Hostel</h4>
-                <p>Hostel accommodation can be requested as part of your admission application.</p>
-                <a href="/admissions" className="btn btn-outline btn-sm" style={{ width: '100%', justifyContent: 'center' }}>
+                <p>
+                  Hostel accommodation can be requested as part of your admission application.
+                </p>
+
+                <a href="/admissions" className="apply-btn">
                   Apply via Admission Form
                 </a>
+              </div>
               </div>
             </div>
           </motion.div>

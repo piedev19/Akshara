@@ -42,6 +42,7 @@ export default function AchieversPreview() {
           {RECORDS.map((r, i) => (
             <motion.div
               key={i}
+              
               className="achievers__record"
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -49,6 +50,7 @@ export default function AchieversPreview() {
             >
               <div className="achievers__record-icon">{r.icon}</div>
               <div>
+                
                 <div className="achievers__record-label">{r.label}</div>
                 <div className="achievers__record-sub">{r.sub}</div>
               </div>

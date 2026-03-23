@@ -50,20 +50,12 @@ const admissionConfirmationTemplate = (admission) => `
 <body>
   <div class="container">
     <div class="header">
-<<<<<<< HEAD
-      <h1>Akshara Hgh School</h1>
-=======
       <h1>Akshara High School</h1>
->>>>>>> 2e128de8df47b166698c7e04444752f01e2a841e
       <p>Excellence in Education Since 2013</p>
     </div>
     <div class="body">
       <p>Dear <strong>${admission.fatherName} & ${admission.motherName}</strong>,</p>
-<<<<<<< HEAD
-      <p>Thank you for choosing Akshara Hgh School for <strong>${admission.studentName}</strong>. We have received your application for admission to <strong>${admission.classAppliedFor}</strong> for the academic year <strong>${admission.academicYear}</strong>.</p>
-=======
       <p>Thank you for choosing Akshara High School for <strong>${admission.studentName}</strong>. We have received your application for admission to <strong>${admission.classAppliedFor}</strong> for the academic year <strong>${admission.academicYear}</strong>.</p>
->>>>>>> 2e128de8df47b166698c7e04444752f01e2a841e
       
       <div class="application-box">
         <p style="margin:0 0 8px; color:#666; font-size:13px; text-transform:uppercase; letter-spacing:1px;">Your Application Number</p>
@@ -97,16 +89,6 @@ const admissionConfirmationTemplate = (admission) => `
       <p>You can track your application status at <a href="${process.env.CLIENT_URL}/admission-status" style="color:#1a3a5c; font-weight:bold;">${process.env.CLIENT_URL}/admission-status</a> using your application number.</p>
       
       <p>For any queries, reach us at:<br>
-<<<<<<< HEAD
-      📞 +91 9494817676 | +91 9494817676<br>
-      ✉️ admissions@akshara.edu.in</p>
-      
-      <p>Warm regards,<br><strong>Admissions Office</strong><br>Akshara Hgh School</p>
-    </div>
-    <div class="footer">
-      <p>Akshara Hgh School | 123 Education Avenue, Knowledge City - 500001</p>
-      <p>Affiliated to State | School Code: 504310 | <a href="tel:+919876543210">+91 9494817676</a></p>
-=======
       📞 +91 94948 17676| +91 94948 17575<br>
       ✉️ aksharaschoolkhankapur@gmail.com</p>
       
@@ -115,7 +97,6 @@ const admissionConfirmationTemplate = (admission) => `
     <div class="footer">
       <p>Akshara High School | Near KNR Garden,   Kankapur, Nirmal - 504101Kankapur, Nirmal - 504101</p>
       <p>Affiliated to BSET | School Code: 3604 | <a href="tel:+919876543210">+91 98765 43210</a></p>
->>>>>>> 2e128de8df47b166698c7e04444752f01e2a841e
     </div>
   </div>
 </body>
@@ -126,11 +107,7 @@ const statusUpdateTemplate = (admission) => `
 <div style="max-width:600px;margin:0 auto;background:#fff;">
   <div style="background:linear-gradient(135deg,#1a3a5c 0%,#0d2137 100%);padding:40px;text-align:center;">
     <h1 style="color:#d4af37;font-size:24px;margin:0;">APPLICATION STATUS UPDATE</h1>
-<<<<<<< HEAD
-    <p style="color:#a0c4e8;margin:8px 0 0;">Akshara Hgh School</p>
-=======
     <p style="color:#a0c4e8;margin:8px 0 0;">Akshara High School</p>
->>>>>>> 2e128de8df47b166698c7e04444752f01e2a841e
   </div>
   <div style="padding:40px;">
     <p>Dear <strong>${admission.fatherName}</strong>,</p>
@@ -140,11 +117,7 @@ const statusUpdateTemplate = (admission) => `
       <p style="font-size:24px;font-weight:bold;color:#1a3a5c;margin:0;">${admission.status}</p>
     </div>
     ${admission.notes ? `<p><strong>Additional Information:</strong> ${admission.notes}</p>` : ''}
-<<<<<<< HEAD
-    <p>For queries, contact admissions@akshara.edu.in or call +91 9494817676</p>
-=======
     <p>For queries, contact aksharaschoolkhankapur@gmail.com or call +91 98765 43210</p>
->>>>>>> 2e128de8df47b166698c7e04444752f01e2a841e
   </div>
 </div>
 </body></html>`;
@@ -152,11 +125,7 @@ const statusUpdateTemplate = (admission) => `
 exports.sendAdmissionConfirmation = async (admission) => {
   await sendEmail({
     to: admission.email,
-<<<<<<< HEAD
-    subject: `Application Received - ${admission.applicationNumber} | Akshara Hgh School`,
-=======
     subject: `Application Received - ${admission.applicationNumber} | Akshara High School`,
->>>>>>> 2e128de8df47b166698c7e04444752f01e2a841e
     html: admissionConfirmationTemplate(admission),
   });
 };
@@ -174,13 +143,8 @@ exports.sendAdmissionNotificationToAdmin = async (admission) => {
 exports.sendContactConfirmation = async (contact) => {
   await sendEmail({
     to: contact.email,
-<<<<<<< HEAD
-    subject: `Message Received - Akshara Hgh School`,
-    html: `<p>Dear ${contact.name},<br><br>Thank you for contacting us. We have received your message regarding "<strong>${contact.subject}</strong>" and will get back to you within 24 hours.<br><br>Regards,<br>Akshara Hgh School</p>`,
-=======
     subject: `Message Received - Akshara High School`,
     html: `<p>Dear ${contact.name},<br><br>Thank you for contacting us. We have received your message regarding "<strong>${contact.subject}</strong>" and will get back to you within 24 hours.<br><br>Regards,<br>Akshara High School</p>`,
->>>>>>> 2e128de8df47b166698c7e04444752f01e2a841e
   });
 };
 
