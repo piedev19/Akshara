@@ -1,3 +1,4 @@
+//school-website/server/index.js
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -11,13 +12,18 @@ const app = express();
 
 // Security middleware
 app.use(helmet());
-app.use(morgan('combined'));
 
+
+app.use(morgan('dev', {
+  skip: (req, res) => res.statusCode === 304
+}));
+app.set('trust proxy', 1)
 // Rate limiting
 const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
+  windowMs: 15 * 60 * 1000,
   max: 100,
-  message: 'Too many requests from this IP, please try again later.',
+  standardHeaders: true,
+  legacyHeaders: false,
 });
 app.use('/api/', limiter);
 

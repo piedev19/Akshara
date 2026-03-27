@@ -219,8 +219,6 @@ In `Footer.jsx` and `Contact.js`, replace:
 ## 📞 Support
 
 For questions about this codebase, contact the development team.
-<<<<<<< HEAD
 For school admissions: **+91 9494817676** | **admissions@akshara.edu.in**
 =======
 For school admissions: **+91 98765 43210** | **aksharaschoolkhankapur@gmail.com**
->>>>>>> 2e128de8df47b166698c7e04444752f01e2a841e

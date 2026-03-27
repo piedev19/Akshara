@@ -31,8 +31,8 @@ const NAV_ITEMS = [
     children: [
       { label: 'Transport', path: '/transport' },
       { label: 'Hostel', path: '/hostel' },
-      { label: 'Gallery', path: '/gallery' },
-      { label: 'News & Events', path: '/news' },
+      //{ label: 'Gallery', path: '/gallery' },
+      //{ label: 'News & Events', path: '/news' },
     ],
   },
   { label: 'Contact', path: '/contact' },

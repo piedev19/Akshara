@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Trophy, Medal, Star, BookOpen, Microscope, Monitor, Music, Dumbbell } from 'lucide-react';
+import { Trophy, Medal, Star,  Microscope, Monitor, Music, Dumbbell } from 'lucide-react';
 import './Academics.css';
 
 const pageVariants = { initial: { opacity: 0 }, animate: { opacity: 1, transition: { duration: 0.4 } }, exit: { opacity: 0 } };
@@ -16,6 +16,21 @@ const STREAMS = [
 ];
 
 const TOPPERS_12 = []; // Not applicable
+
+const TOPPERS_10 = [
+  {
+    name: "Student Name",
+    score: "98.5%",
+    year: "2025",
+    img: "https://via.placeholder.com/150"
+  },
+  {
+    name: "Student Name",
+    score: "97%",
+    year: "2025",
+    img: "https://via.placeholder.com/150"
+  }
+];
 
 const RECORDS = [
   { icon: <Trophy size={13} />, title: '100% Board Results', detail: '12 consecutive years — Class X & X both', color: '#d4af37' },

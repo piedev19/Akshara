@@ -33,6 +33,10 @@ export const admissionAPI = {
   submit: (data) => API.post('/admissions', data),
   checkStatus: (appNo) => API.get(`/admissions/status/${appNo}`),
   getSeats: () => API.get('/admissions/seats'),
+  updateStatus: (id, status) =>
+    API.put(`/admissions/${id}/status`, { status }),
+  // ✅ ADD THIS
+  getAll: () => API.get('/admissions'),
 };
 
 export const contactAPI = {
@@ -59,5 +63,6 @@ export const hostelAPI = {
 export const galleryAPI = {
   getAll: () => API.get('/gallery'),
 };
+
 
 export default API;

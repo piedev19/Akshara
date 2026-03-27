@@ -6,6 +6,7 @@ import Footer from './components/common/Footer';
 import ScrollToTop from './components/common/ScrollToTop';
 import FloatingAdmission from './components/common/FloatingAdmission';
 import Loader from './components/common/Loader';
+import AdminAdmissions from './pages/AdminAdmissions';
 
 const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
@@ -14,8 +15,8 @@ const Admissions = lazy(() => import('./pages/Admissions'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Transport = lazy(() => import('./pages/Transport'));
 const Hostel = lazy(() => import('./pages/Hostel'));
-const Gallery = lazy(() => import('./pages/Gallery'));
-const News = lazy(() => import('./pages/News'));
+//const Gallery = lazy(() => import('./pages/Gallery'));
+//const News = lazy(() => import('./pages/News'));
 const AdmissionStatus = lazy(() => import('./pages/AdmissionStatus'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
@@ -37,9 +38,10 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/transport" element={<Transport />} />
               <Route path="/hostel" element={<Hostel />} />
-              <Route path="/gallery" element={<Gallery />} />
-              <Route path="/news" element={<News />} />
+              {/*<Route path="/gallery" element={<Gallery />} />
+              <Route path="/news" element={<News />} />*/}
               <Route path="/admission-status" element={<AdmissionStatus />} />
+              <Route path="/admin/admissions" element={<AdminAdmissions />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </AnimatePresence>

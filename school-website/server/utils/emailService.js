@@ -1,3 +1,4 @@
+// utils/emailService.js
 const nodemailer = require('nodemailer');
 
 const createTransporter = () => {
@@ -50,11 +51,13 @@ const admissionConfirmationTemplate = (admission) => `
 <body>
   <div class="container">
     <div class="header">
+
       <h1>Akshara High School</h1>
       <p>Excellence in Education Since 2013</p>
     </div>
     <div class="body">
       <p>Dear <strong>${admission.fatherName} & ${admission.motherName}</strong>,</p>
+
       <p>Thank you for choosing Akshara High School for <strong>${admission.studentName}</strong>. We have received your application for admission to <strong>${admission.classAppliedFor}</strong> for the academic year <strong>${admission.academicYear}</strong>.</p>
       
       <div class="application-box">
@@ -89,6 +92,7 @@ const admissionConfirmationTemplate = (admission) => `
       <p>You can track your application status at <a href="${process.env.CLIENT_URL}/admission-status" style="color:#1a3a5c; font-weight:bold;">${process.env.CLIENT_URL}/admission-status</a> using your application number.</p>
       
       <p>For any queries, reach us at:<br>
+
       📞 +91 94948 17676| +91 94948 17575<br>
       ✉️ aksharaschoolkhankapur@gmail.com</p>
       
@@ -107,6 +111,7 @@ const statusUpdateTemplate = (admission) => `
 <div style="max-width:600px;margin:0 auto;background:#fff;">
   <div style="background:linear-gradient(135deg,#1a3a5c 0%,#0d2137 100%);padding:40px;text-align:center;">
     <h1 style="color:#d4af37;font-size:24px;margin:0;">APPLICATION STATUS UPDATE</h1>
+
     <p style="color:#a0c4e8;margin:8px 0 0;">Akshara High School</p>
   </div>
   <div style="padding:40px;">
@@ -117,6 +122,7 @@ const statusUpdateTemplate = (admission) => `
       <p style="font-size:24px;font-weight:bold;color:#1a3a5c;margin:0;">${admission.status}</p>
     </div>
     ${admission.notes ? `<p><strong>Additional Information:</strong> ${admission.notes}</p>` : ''}
+
     <p>For queries, contact aksharaschoolkhankapur@gmail.com or call +91 98765 43210</p>
   </div>
 </div>
@@ -125,6 +131,7 @@ const statusUpdateTemplate = (admission) => `
 exports.sendAdmissionConfirmation = async (admission) => {
   await sendEmail({
     to: admission.email,
+
     subject: `Application Received - ${admission.applicationNumber} | Akshara High School`,
     html: admissionConfirmationTemplate(admission),
   });
@@ -143,6 +150,7 @@ exports.sendAdmissionNotificationToAdmin = async (admission) => {
 exports.sendContactConfirmation = async (contact) => {
   await sendEmail({
     to: contact.email,
+
     subject: `Message Received - Akshara High School`,
     html: `<p>Dear ${contact.name},<br><br>Thank you for contacting us. We have received your message regarding "<strong>${contact.subject}</strong>" and will get back to you within 24 hours.<br><br>Regards,<br>Akshara High School</p>`,
   });
