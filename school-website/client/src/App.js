@@ -8,6 +8,9 @@ import FloatingAdmission from './components/common/FloatingAdmission';
 import Loader from './components/common/Loader';
 import AdminAdmissions from './pages/AdminAdmissions';
 
+import AdminLogin from './pages/AdminLogin';
+import ProtectedRoute from './components/ProtectedRoute';
+
 const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
 const Academics = lazy(() => import('./pages/Academics'));
@@ -19,6 +22,8 @@ const Hostel = lazy(() => import('./pages/Hostel'));
 //const News = lazy(() => import('./pages/News'));
 const AdmissionStatus = lazy(() => import('./pages/AdmissionStatus'));
 const NotFound = lazy(() => import('./pages/NotFound'));
+
+
 
 function App() {
   const location = useLocation();
@@ -41,8 +46,19 @@ function App() {
               {/*<Route path="/gallery" element={<Gallery />} />
               <Route path="/news" element={<News />} />*/}
               <Route path="/admission-status" element={<AdmissionStatus />} />
-              <Route path="/admin/admissions" element={<AdminAdmissions />} />
               <Route path="*" element={<NotFound />} />
+
+              <Route path="/admin/login" element={<AdminLogin />} />
+              <Route
+                path="/admin/admissions"
+                element={
+                  <ProtectedRoute>
+                    <AdminAdmissions />
+                  </ProtectedRoute>
+                }
+              />
+
+
             </Routes>
           </AnimatePresence>
         </Suspense>

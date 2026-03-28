@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { GraduationCap, Phone, Mail, MapPin, Instagram, Facebook, Youtube, ExternalLink } from 'lucide-react';
+import { GraduationCap, Phone, Mail, MapPin, Instagram, Facebook, Youtube} from 'lucide-react';
 import './Footer.css';
 
 export default function Footer() {
@@ -47,8 +47,6 @@ export default function Footer() {
                 { to: '/about', label: 'About Us' },
                 { to: '/academics', label: 'Academics' },
                 { to: '/admissions', label: 'Admissions 2026-27' },
-                { to: '/gallery', label: 'Photo Gallery' },
-                { to: '/news', label: 'News & Events' },
                 { to: '/contact', label: 'Contact Us' },
               ].map(link => (
                 <li key={link.to}><Link to={link.to}>{link.label}</Link></li>
@@ -63,11 +61,8 @@ export default function Footer() {
               {[
                 { to: '/transport', label: 'Transport Services' },
                 { to: '/hostel', label: 'Hostel (Boys & Girls)' },
-                { to: '/academics#facilities', label: 'Science Labs' },
-                { to: '/academics#facilities', label: 'Digital Library' },
+                { to: '/academics#facilities', label: 'Computer Labs' },
                 { to: '/academics#facilities', label: 'Sports Complex' },
-                { to: '/academics#facilities', label: 'Computer Centre' },
-                { to: '/academics#facilities', label: 'Auditorium' },
               ].map((link, i) => (
                 <li key={i}><Link to={link.to}>{link.label}</Link></li>
               ))}
@@ -120,6 +115,7 @@ export default function Footer() {
             <a href="#privacy">Privacy Policy</a>
             <a href="#terms">Terms of Use</a>
             <Link to="/admission-status">Check Admission Status</Link>
+            <Link to="/admin/login">Admin Login</Link>
           </div>
         </div>
       </div>

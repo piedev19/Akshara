@@ -10,7 +10,7 @@ const SLIDES = [
     tag: 'Welcome to Akshara High School',
     title: 'Where Excellence\nMeets Opportunity',
     subtitle: 'Nursery to Class X | Established 2013',
-    cta: { primary: { label: 'Apply for Admission', to: '/admissions' }, secondary: { label: 'Explore Our Campus', to: '/gallery' } },
+    cta: { primary: { label: 'Apply for Admission', to: '/admissions' }, secondary: { label: 'Explore Our Campus', to: '/ABOUT' } },
   },
   {
     bg: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1920&q=80',
@@ -24,7 +24,7 @@ const SLIDES = [
     tag: 'Holistic Development',
     title: 'Sports, Arts,\nAnd Beyond',
     subtitle: 'A campus designed to nurture every talent — in and out of the classroom.',
-    cta: { primary: { label: 'Discover Campus Life', to: '/gallery' }, secondary: { label: 'Apply Now', to: '/admissions' } },
+    cta: { primary: { label: 'Discover Campus Life', to: '/ABOUT' }, secondary: { label: 'Apply Now', to: '/admissions' } },
   },
 ];
 

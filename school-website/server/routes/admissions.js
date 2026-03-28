@@ -1,9 +1,12 @@
+// server/routes/admissions.js
 const express = require('express');
 const router = express.Router();
 const { body, validationResult } = require('express-validator');
 const Admission = require('../models/Admission');
 const { sendAdmissionConfirmation, sendAdmissionNotificationToAdmin } = require('../utils/emailService');
 const rateLimit = require('express-rate-limit');
+const verifyAdmin = require('../middleware/auth');
+
 
 const admissionLimiter = rateLimit({
   windowMs: 60 * 60 * 1000, // 1 hour
@@ -79,6 +82,16 @@ router.post('/', admissionLimiter, validateAdmission, async (req, res) => {
   }
 });
 
+
+router.get('/', verifyAdmin, async (req, res) => {
+  try {
+    const data = await Admission.find().sort({ createdAt: -1 });
+    res.json(data);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
+
 // GET - Check application status
 router.get('/status/:applicationNumber', async (req, res) => {
   try {
@@ -143,7 +156,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.put('/:id/status', async (req, res) => {
+router.put('/:id/status', verifyAdmin, async (req, res) => {
   try {
     const { status } = req.body;
 
@@ -158,5 +171,6 @@ router.put('/:id/status', async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 });
+
 
 module.exports = router;

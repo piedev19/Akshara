@@ -45,12 +45,15 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 // Routes
 app.use('/api/admissions', require('./routes/admissions'));
 app.use('/api/contact', require('./routes/contact'));
+
+// ✅ ADD THIS
+app.use('/api/admin', require('./routes/adminAuth'));
+
 app.use('/api/achievers', require('./routes/achievers'));
 app.use('/api/gallery', require('./routes/gallery'));
 app.use('/api/news', require('./routes/news'));
 app.use('/api/transport', require('./routes/transport'));
 app.use('/api/hostel', require('./routes/hostel'));
-app.use('/api/admin', require('./routes/admin'));
 
 // Health check
 app.get('/api/health', (req, res) => {
@@ -64,6 +67,7 @@ app.get('/sitemap.xml', require('./utils/sitemap'));
 app.use((req, res) => {
   res.status(404).json({ success: false, message: 'Route not found' });
 });
+
 
 // Global error handler
 app.use((err, req, res, next) => {

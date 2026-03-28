@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Trophy, Medal, Star,  Microscope, Monitor, Music, Dumbbell } from 'lucide-react';
+import { Trophy, Medal, Star,  /*Microscope,*/ Monitor, Music, Dumbbell } from 'lucide-react';
 import './Academics.css';
 
 const pageVariants = { initial: { opacity: 0 }, animate: { opacity: 1, transition: { duration: 0.4 } }, exit: { opacity: 0 } };
@@ -15,20 +15,20 @@ const STREAMS = [
   { label: 'Senior Secondary', grades: 'Classes XI – X', icon: '🏆', desc: 'Science (PCM/PCB), Commerce, and Humanities streams with expert faculty, career guidance, and JEE/NEET/CLAT coaching support.' },
 ];
 
-const TOPPERS_12 = []; // Not applicable
+
 
 const TOPPERS_10 = [
   {
     name: "Student Name",
     score: "98.5%",
     year: "2025",
-    img: "https://via.placeholder.com/150"
+    img: "https://assets.leetcode.com/users/default_avatar.jpg"
   },
   {
     name: "Student Name",
     score: "97%",
     year: "2025",
-    img: "https://via.placeholder.com/150"
+    img: "https://assets.leetcode.com/users/default_avatar.jpg"
   }
 ];
 
@@ -42,11 +42,11 @@ const RECORDS = [
 ];
 
 const FACILITIES = [
-  { 
+  /*{ 
     icon: <Microscope size={24} />, 
     name: 'Science Lab', 
     detail: 'Basic lab facilities for practical learning' 
-  },
+  },*/
   { 
     icon: <Monitor size={24} />, 
     name: 'Computer Lab', 
@@ -74,7 +74,7 @@ export default function Academics() {
   const { ref: streamRef, inView: streamInView } = useInView({ triggerOnce: true, threshold: 0.1 });
   const { ref: achieversRef, inView: achieversInView } = useInView({ triggerOnce: true, threshold: 0.05 });
   const { ref: recordsRef, inView: recordsInView } = useInView({ triggerOnce: true, threshold: 0.1 });
-  const toppers = activeTab === '10' ? TOPPERS_10 : TOPPERS_12;
+  const toppers = TOPPERS_10;
 
   return (
     <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit">
@@ -133,7 +133,7 @@ export default function Academics() {
             <p className="subtitle" style={{ color: 'rgba(255,255,255,0.65)' }}>Year after year, our students set new benchmarks in BSET board examinations.</p>
           </div>
           <div className="academics__topper-tabs">
-            {[['10','Class X Toppers'],['12','Class X Toppers']].map(([v, l]) => (
+            {[['10','Class X Toppers']].map(([v, l]) => (
               <button key={v} className={`academics__topper-tab ${activeTab === v ? 'active' : ''}`} onClick={() => setActiveTab(v)}>{l}</button>
             ))}
           </div>
@@ -202,7 +202,7 @@ export default function Academics() {
           </div>
           <div className="academics__facility-img-row">
             {[
-              'https://images.unsplash.com/photo-1532094349884-543559c10c2b?w=600&q=70',
+              'https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=700&q=75',
               'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&q=70',
               'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&q=70',
             ].map((src, i) => (

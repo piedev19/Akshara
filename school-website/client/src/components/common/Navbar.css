@@ -45,7 +45,7 @@
 .navbar__inner {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 20px;
   height: 72px;
 }
 
@@ -89,22 +89,26 @@
 .navbar__nav {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
   flex: 1;
   justify-content: center;
 }
-.navbar__item { position: relative; }
+.navbar__item {
+  position: relative;
+  flex-shrink: 0; /* ✅ prevents compression */
+}
 
 .navbar__link {
-  padding: 8px 14px;
-  font-size: 0.875rem;
+  padding: 8px 12px; /* slightly reduce */
+  font-size: 0.85rem; /* slightly smaller */
   font-weight: 500;
-  transition: color 0.2s var(--ease);
   display: flex;
   align-items: center;
   gap: 4px;
   background: none;
   border: none;
+
+  white-space: nowrap;   /* ✅ IMPORTANT */
 }
 .navbar__link--btn { cursor: pointer; }
 
@@ -148,6 +152,12 @@
 
 /* CTA */
 .navbar__cta { margin-left: auto; flex-shrink: 0; }
+
+
+.navbar__cta .btn {
+  padding: 8px 16px; /* reduce size */
+  font-size: 0.85rem;
+}
 
 /* Mobile toggle */
 .navbar__mobile-toggle {

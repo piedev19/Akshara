@@ -167,8 +167,8 @@ export default function Hostel() {
               <div className="hostel__warden-card">
                 <div className="hostel__warden-avatar">
                   {activeWing === 'boys'
-                    ? <img src="https://i.pravatar.cc/100?img=52" alt="Boys Warden" />
-                    : <img src="https://i.pravatar.cc/100?img=44" alt="Girls Warden" />
+                    ? <img src="https://assets.leetcode.com/users/default_avatar.jpg" alt="Boys Warden" />
+                    : <img src="https://assets.leetcode.com/users/default_avatar.jpg" alt="Girls Warden" />
                   }
                 </div>
                 <div className="hostel__warden-badge">{activeWing === 'boys' ? 'Boys' : 'Girls'} Warden</div>
