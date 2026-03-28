@@ -2,22 +2,21 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Trophy, Star, Award } from 'lucide-react';
+import { Trophy, Star} from 'lucide-react';
 import './AchieversPreview.css';
 
 const TOPPERS = [
   { name: 'Arjun Sharma', class: 'Class X', score: '99.2%', img: 'https://assets.leetcode.com/users/default_avatar.jpg', category: 'Academic' },
   { name: 'Priya Reddy', class: 'Class X', score: '98.8%',  img: 'https://assets.leetcode.com/users/default_avatar.jpg', category: 'Academic' },
   { name: 'Rahul Mehta', class: 'Class X', score: '99.0%',  img: 'https://assets.leetcode.com/users/default_avatar.jpg', category: 'Academic' },
-  { name: 'Sneha Kulkarni', class: 'Class X', score: '97.6%', img: 'https://assets.leetcode.com/users/default_avatar.jpg', category: 'Arts' },
-  { name: 'Karan Patel', class: 'Class VIII', score: 'Gold Medal', img: 'https://assets.leetcode.com/users/default_avatar.jpg', category: 'Science' },
+  { name: 'Sneha Kulkarni', class: 'Class X', score: '97.6%', img: 'https://assets.leetcode.com/users/default_avatar.jpg', category: 'Academics' },
+  { name: 'Karan Patel', class: 'Class VIII', score: 'Gold Medal', img: 'https://assets.leetcode.com/users/default_avatar.jpg', category: 'Science-Fair' },
   { name: 'Ananya Iyer', class: 'Class XI', score: '1st Place', img: 'https://assets.leetcode.com/users/default_avatar.jpg', category: 'Sports' },
 ];
 
 const RECORDS = [
   { icon: <Trophy size={22} />, label: '100% Board Results', sub: '6 consecutive years' },
   { icon: <Star size={22} />, label: '8 State Toppers', sub: 'In the last 5 years' },
-  { icon: <Award size={22} />, label: '20+ Olympiad Medals', sub: 'National & High ' },
 ];
 
 const categoryColor = { Academic: '#1a3a5c', Sports: '#2d7a3a', Arts: '#7a3a5c', Science: '#3a5c1a' };

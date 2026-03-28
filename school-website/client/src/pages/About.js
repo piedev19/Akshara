@@ -34,12 +34,10 @@ const FACULTY = [
 
 const MILESTONES = [
   { year: '2013', event: 'School founded by Mr. Nagesh with 120 students in Classes I–VII' },
-  { year: '2002', event: 'BSET affiliation granted; first Class X board exams with 100% results' },
-  { year: '2007', event: 'New academic wing and sports complex inaugurated; strength grows to 1,200 students' },
-  { year: '2010', event: 'Classes XI–X added; first board year sees state topper in Commerce stream' },
+  { year: '2014', event: 'BSET affiliation granted; first Class X board exams with 100% results' },
   { year: '2015', event: 'Hostel facilities opened for boys and girls; digital library inaugurated' },
-  { year: '2019', event: 'School recognized as "School of Excellence" by BSET; strength crosses 2,500' },
-  { year: '2022', event: 'Smart classrooms installed in all sections; robotics lab established' },
+  { year: '2016', event: 'New academic wing and sports complex inaugurated; strength grows to 750+ students' },
+  { year: '2019', event: 'School recognized as "School of Excellence" by BSET; strength crosses 1200' },
   { year: '2025', event: 'Awarded National Green Schools honour; 1,200+ students enrolled for 2025-26' },
 ];
 

@@ -12,7 +12,6 @@ const STREAMS = [
   { label: 'Primary', grades: 'Classes I – V', icon: '📚', desc: 'Strong foundational skills in Literacy, Numeracy, EVS, and Hindi with project-based learning and formative assessments.' },
   { label: 'Middle School', grades: 'Classes VI – VIII', icon: '🔬', desc: 'Structured BSET curriculum with separate labs, introduction to computers, and a wide range of co-curricular activities.' },
   { label: 'Secondary', grades: 'Classes IX – X', icon: '🎯', desc: 'BSET Board preparation with academic rigour, counselling, extra classes, and consistent doubt-clearing sessions.' },
-  { label: 'Senior Secondary', grades: 'Classes XI – X', icon: '🏆', desc: 'Science (PCM/PCB), Commerce, and Humanities streams with expert faculty, career guidance, and JEE/NEET/CLAT coaching support.' },
 ];
 
 
@@ -21,23 +20,21 @@ const TOPPERS_10 = [
   {
     name: "Student Name",
     score: "98.5%",
-    year: "2025",
+    year: "2024",
     img: "https://assets.leetcode.com/users/default_avatar.jpg"
   },
   {
     name: "Student Name",
     score: "97%",
-    year: "2025",
+    year: "2024",
     img: "https://assets.leetcode.com/users/default_avatar.jpg"
   }
 ];
 
 const RECORDS = [
-  { icon: <Trophy size={13} />, title: '100% Board Results', detail: '12 consecutive years — Class X & X both', color: '#d4af37' },
-  { icon: <Medal size={13} />, title: 'AIR 47 – JEE Advanced', detail: 'Arjun Sharma, Class X PCM, 2025', color: '#c0c0c0' },
-  { icon: <Star size={13} />, title: '47 State Toppers', detail: 'Across all streams in the last 5 years', color: '#cd7f32' },
-  { icon: <Trophy size={13} />, title: 'NEET Rank 312', detail: 'Kavya Menon, Class X PCB, 2024', color: '#d4af37' },
-  { icon: <Medal size={13} />, title: '200+ Olympiad Medals', detail: 'National & High– Maths, Science, English', color: '#c0c0c0' },
+  { icon: <Trophy size={13} />, title: '100% Board Results', detail: '8 consecutive years — Class X', color: '#d4af37' },
+  { icon: <Star size={13} />, title: '5+ District Toppers', detail: 'Across all streams in the last 5 years', color: '#cd7f32' },
+  { icon: <Medal size={13} />, title: '30+ District & State Medals', detail: 'We have earned over 30 district- and state-level medals across various sports disciplines', color: '#c0c0c0' },
   { icon: <Star size={13} />, title: 'Best School Award', detail: '"School of Excellence" – BSET 2019 & 2023', color: '#cd7f32' },
 ];
 

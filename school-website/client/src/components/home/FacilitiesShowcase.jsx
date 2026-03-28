@@ -17,8 +17,8 @@ const FACILITIES = [
     label: 'Sports Complex',
     img: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=900&q=80',
     title: 'Championship-Level Sports Facilities',
-    desc: 'A sprawling sports complex with facilities for cricket, football, basketball, badminton, swimming, athletics, and more. Our students are trained by former national-level coaches to compete and win at the highest levels.',
-    highlights: ['Olympic-size swimming pool', 'Indoor sports hall', 'Cricket & football grounds', 'Certified coaches'],
+    desc: 'A sprawling sports complex with facilities for cricket, VollyBall, athletics, and more. Our students are trained by experienced PETS to compete and win at the highest levels.',
+    highlights: ['Indoor sports hall', 'Cricket & VollyBall grounds', 'Certified PETs'],
   },
   {
     id: 'hostel',
@@ -33,8 +33,8 @@ const FACILITIES = [
     label: 'Transport',
     img: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=900&q=80',
     title: 'GPS-Enabled, Door-to-Door Transport',
-    desc: 'A fleet of 20+ GPS-tracked buses covering 5 major city zones ensures safe, timely commutes. All buses are equipped with first aid kits, a lady escort, and are maintained to the highest road-safety standards.',
-    highlights: ['20+ GPS-tracked buses', '5 city-wide zones', 'Lady escort on every bus', 'Real-time tracking app'],
+    desc: 'A fleet of 4+ GPS-tracked buses covering 5 major city zones ensures safe, timely commutes. All buses are equipped with first aid kits, a lady escort, and are maintained to the highest road-safety standards.',
+    highlights: ['4+ GPS-tracked buses', '5 city-wide zones', 'Lady escort on every bus', 'Real-time tracking app'],
   },
 ];
 
