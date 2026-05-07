@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Microscope, Trophy, Bus, Home, Wifi, Shield, Music, Leaf } from 'lucide-react';
+import { Trophy, Bus, Home, Shield, Music, Leaf } from 'lucide-react';
 import './WhyUs.css';
 
 const REASONS = [
