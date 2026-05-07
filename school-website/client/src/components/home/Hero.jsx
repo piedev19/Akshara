@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ChevronDown, Award, Users, BookOpen, Star } from 'lucide-react';
 import './Hero.css';
+import heroImg from './Akshara_image.png';
 
 const SLIDES = [
   {
-    bg: 'https://lh3.googleusercontent.com/gps-cs-s/AHVAweo6i_UZEPCfX_f1H7kdeySFC47wzR1y-YXsfn5UauTsYIbpPF-E6TiNa8l-MlRKoNkehXZf-4coiM3egwXuLBH8dnk-CbgUNB9dIsF21xL-7tQlZ4K0WuAeNHNl1nYjBGwm-m-w=s1360-w1360-h1020-rw',
+    bg: heroImg,
     tag: 'Welcome to Akshara High School',
     title: 'Where Excellence\nMeets Opportunity',
     subtitle: 'Nursery to Class X | Established 2013',

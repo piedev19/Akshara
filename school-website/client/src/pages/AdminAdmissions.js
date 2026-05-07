@@ -283,13 +283,24 @@ export default function AdminAdmissions() {
 
             <span
                 onClick={async () => {
+
                     const newStatus =
-                        selected.status === 'Confirmed' ? 'Pending' : 'Confirmed';
+                        selected.status === 'Admitted'
+                            ? 'Pending'
+                            : 'Admitted';
 
                     try {
-                        await admissionAPI.updateStatus(selected._id, newStatus);
 
-                        const updatedSelected = { ...selected, status: newStatus };
+                        await admissionAPI.updateStatus(
+                            selected._id,
+                            newStatus
+                        );
+
+                        const updatedSelected = {
+                            ...selected,
+                            status: newStatus
+                        };
+
                         setSelected(updatedSelected);
 
                         const updated = data.map(d =>
@@ -302,27 +313,30 @@ export default function AdminAdmissions() {
                         setOriginalData(updated);
 
                     } catch (err) {
+
                         console.error(err);
+                        alert(err.message);
                     }
-                    }}
+                }}
+
                 style={{
-                padding: '8px 14px',
-                borderRadius: 8,
-                cursor: 'pointer',
-                fontSize: 13,
-                display: 'inline-block',
+                    padding: '8px 14px',
+                    borderRadius: 8,
+                    cursor: 'pointer',
+                    fontSize: 13,
+                    display: 'inline-block',
 
-                background:
-                    selected.status === 'Confirmed'
-                    ? 'rgba(52,211,153,0.15)'
-                    : 'rgba(255,107,107,0.15)',
+                    background:
+                        selected.status === 'Admitted'
+                            ? 'rgba(52,211,153,0.15)'
+                            : 'rgba(255,107,107,0.15)',
 
-                color:
-                    selected.status === 'Confirmed'
-                    ? '#34d399'
-                    : '#ff6b6b',
+                    color:
+                        selected.status === 'Admitted'
+                            ? '#34d399'
+                            : '#ff6b6b',
 
-                border: '1px solid rgba(255,255,255,0.2)'
+                    border: '1px solid rgba(255,255,255,0.2)'
                 }}
             >
                 {selected.status || 'Pending'}
@@ -433,7 +447,7 @@ export default function AdminAdmissions() {
                     e.stopPropagation();
 
                     const newStatus =
-                    item.status === 'Confirmed' ? 'Pending' : 'Confirmed';
+                    item.status === 'Admitted' ? 'Pending' : 'Admitted';
 
                     try {
                     // ✅ update in backend (IMPORTANT)
@@ -459,11 +473,11 @@ export default function AdminAdmissions() {
                     cursor: 'pointer',
                     fontSize: 12,
                     background:
-                    item.status === 'Confirmed'
+                    item.status === 'Admitted'
                         ? 'rgba(52,211,153,0.15)'
                         : 'rgba(255,107,107,0.15)',
                     color:
-                    item.status === 'Confirmed'
+                    item.status === 'Admitted'
                         ? '#34d399'
                         : '#ff6b6b',
                     border: '1px solid rgba(255,255,255,0.2)',

@@ -1,3 +1,4 @@
+// school-website/client/src/pages/Admissions.js
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
